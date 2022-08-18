@@ -1,6 +1,7 @@
 import * as React from 'react'
-import { AvatarProps } from './Avatar.types'
+
 import { StyledAvatar } from './Avatar.styles'
+import { AvatarProps } from './Avatar.types'
 
 export const Avatar: React.FC<AvatarProps> = ({ size = 'default', img, name }) => {
   if (img) {

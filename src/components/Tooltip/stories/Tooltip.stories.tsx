@@ -1,9 +1,10 @@
 import { Meta } from '@storybook/react'
-import { Tooltip } from '../Tooltip'
-import { Icon } from '../../Icon/Icon'
-import { Button } from '../../Button/Button'
 import * as React from 'react'
+
+import { Button } from '../../Button/Button'
 import { Grid } from '../../Grid/Grid'
+import { Icon } from '../../Icon/Icon'
+import { Tooltip } from '../../../index'
 
 export default {
   title: 'UI System/Tooltip',

@@ -1,11 +1,11 @@
+import { Meta } from '@storybook/react'
 import * as React from 'react'
 
-import { Meta } from '@storybook/react'
-import { Text } from '../Text'
 import { Grid } from '../../Grid/Grid'
-import { Strong } from '../Strong'
-import { Italic } from '../Italic'
 import { H1, H2, H3, H4 } from '../Heading'
+import { Italic } from '../Italic'
+import { Strong } from '../Strong'
+import { Text } from '../Text'
 
 export default {
   title: 'UI System/Typography',

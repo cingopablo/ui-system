@@ -1,9 +1,10 @@
-import { CSS } from '../../theming/stitches.config'
 import React from 'react'
-import { DEFAULT_TAG } from './Typography.constants'
-import { Text } from './Text'
-import { HeadingProps, HeadingSizeVariants, ShortHandHeadingProps } from './Typography.types'
+
+import { CSS } from '../../theming/stitches.config'
 import { text } from '../../theming/tokens'
+import { Text } from './Text'
+import { DEFAULT_TAG } from './Typography.constants'
+import { HeadingProps, HeadingSizeVariants, ShortHandHeadingProps } from './Typography.types'
 
 const Heading = React.forwardRef<React.ElementRef<typeof DEFAULT_TAG>, HeadingProps>((props, ref) => {
   const { size = 'h1', ...rest } = props

@@ -1,6 +1,7 @@
 import * as React from 'react'
-import { EMProps } from './Typography.types'
+
 import { Text } from './Text'
+import { EMProps } from './Typography.types'
 
 export const Italic = React.forwardRef<React.ElementRef<'em'>, EMProps>((props, ref) => {
   return (

@@ -1,8 +1,8 @@
+import { Meta } from '@storybook/react'
 import * as React from 'react'
 
-import { Flex } from '../Flex'
-import { Meta } from '@storybook/react'
 import { styled } from '../../../theming/stitches.config'
+import { Flex } from '../Flex'
 
 export default {
   title: 'UI System/Flex',

@@ -1,5 +1,5 @@
 export const light = {
-  '.cingo-light': {
+  '.cingopablo-light': {
     '--color-primary': 'hsl(var(--palette-purple-600))',
     '--color-primary-emphasis': 'hsl(var(--palette-purple-500))',
     '--color-primary-clear': 'hsl(var(--palette-purple-100))',

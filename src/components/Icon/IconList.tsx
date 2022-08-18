@@ -1,5 +1,7 @@
-import { IconProps } from './Icon.types'
+import React from 'react'
+
 import { StyledSVG } from './Icon.styles'
+import { IconProps } from './Icon.types'
 
 export const ArrowRightIcon = (props: IconProps) => (
   <StyledSVG
@@ -231,7 +233,7 @@ export const OptionKeyIcon = (props: IconProps) => (
     strokeLinejoin={'round'}
     strokeLinecap={'round'}
     {...props}>
-    <path strokeMiterlimit={10} d="M16 8H8V16H16V8Z" />
+    <path strokeMiterlimit={10} d={'M16 8H8V16H16V8Z'} />
     <path strokeMiterlimit={10} d={'M8 8H5C3.34 8 2 6.66 2 5C2 3.34 3.34 2 5 2C6.66 2 8 3.34 8 5V8Z'} />
     <path strokeMiterlimit={10} d={'M16 8H19C20.66 8 22 6.66 22 5C22 3.34 20.66 2 19 2C17.34 2 16 3.34 16 5V8Z'} />
     <path strokeMiterlimit={10} d={'M8 16H5C3.34 16 2 17.34 2 19C2 20.66 3.34 22 5 22C6.66 22 8 20.66 8 19V16Z'} />
@@ -255,6 +257,6 @@ export const ChevronRightIcon = (props: IconProps) => (
     strokeLinejoin={'round'}
     strokeLinecap={'round'}
     {...props}>
-    <path d="M8 20L16 12L8 4" />
+    <path d={'M8 20L16 12L8 4'} />
   </StyledSVG>
 )

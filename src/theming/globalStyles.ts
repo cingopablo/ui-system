@@ -1,6 +1,6 @@
 import { globalCss } from './stitches.config'
-import { layout, radii, spacing, typography, colors } from './tokens'
-import { light, dark } from './themes'
+import { dark, light } from './themes'
+import { colors, layout, radii, spacing, typography } from './tokens'
 
 const global = {
   '*': {

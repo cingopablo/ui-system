@@ -1,8 +1,9 @@
-import { CSS } from '../../theming/stitches.config'
 import { VariantProps } from '@stitches/react'
-import { DEFAULT_TAG } from './Typography.constants'
-import { Text } from './Text'
 import * as React from 'react'
+
+import { CSS } from '../../theming/stitches.config'
+import { Text } from './Text'
+import { DEFAULT_TAG } from './Typography.constants'
 
 export type TextSizeVariants = Pick<VariantProps<typeof Text>, 'size' | 'variant' | 'gradient'>
 

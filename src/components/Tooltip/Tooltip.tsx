@@ -10,7 +10,7 @@ import {
 } from './Tooltip.constants'
 import { VisuallyHidden } from '../VisuallyHidden/VisuallyHidden'
 
-export const Tooltip = ({
+const Tooltip = ({
   children,
   id,
   delayDuration = DEFAULT_TOOLTIP_DELAY,
@@ -43,3 +43,5 @@ export const Tooltip = ({
 
 Tooltip.displayName = 'Tooltip'
 Tooltip.Provider = TooltipPrimitive.TooltipProvider
+
+export default Tooltip

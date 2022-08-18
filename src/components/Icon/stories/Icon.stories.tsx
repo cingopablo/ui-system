@@ -1,6 +1,6 @@
+import { Meta } from '@storybook/react'
 import * as React from 'react'
 
-import { Meta } from '@storybook/react'
 import { Flex } from '../../Flex/Flex'
 import { Icon } from '../Icon'
 

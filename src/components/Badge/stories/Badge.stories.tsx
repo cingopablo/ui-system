@@ -1,8 +1,9 @@
 import { Meta } from '@storybook/react'
-import { Badge } from '../Badge'
-import { Grid } from '../../Grid/Grid'
 import * as React from 'react'
+
+import { Grid } from '../../Grid/Grid'
 import { Icon } from '../../Icon/Icon'
+import { Badge } from '../Badge'
 
 export default {
   title: 'UI System/Badge',

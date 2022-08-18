@@ -1,6 +1,5 @@
-import * as React from 'react'
-
 import { Meta } from '@storybook/react'
+import * as React from 'react'
 
 import { Grid } from '../../Grid/Grid'
 import { Card } from '../Card'

@@ -1,4 +1,4 @@
-import { globalStyles } from '../src/theming/globalStyles'
+import { globalStyles } from '../src'
 
 globalStyles()
 
@@ -15,13 +15,13 @@ export const parameters = {
     list: [
       {
         name: 'Light',
-        class: 'cingo-light',
+        class: 'cingopablo-light',
         default: true,
         color: '#ffffff',
       },
       {
         name: 'Dark',
-        class: 'cingo-dark',
+        class: 'cingopablo-dark',
         color: '#000000',
       },
     ],

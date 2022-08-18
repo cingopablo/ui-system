@@ -1,5 +1,6 @@
-import * as React from 'react'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
+import * as React from 'react'
+
 import { DialogContent, Overlay } from './Dialog.styles'
 
 type DialogProps = {

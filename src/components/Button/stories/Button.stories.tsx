@@ -1,10 +1,10 @@
+import { Meta } from '@storybook/react'
 import * as React from 'react'
 
-import { Meta } from '@storybook/react'
-import { Button } from '../Button'
+import { Flex } from '../../Flex/Flex'
 import { Grid } from '../../Grid/Grid'
 import { Icon } from '../../Icon/Icon'
-import { Flex } from '../../Flex/Flex'
+import { Button } from '../Button'
 
 export default {
   title: 'UI System/Button',

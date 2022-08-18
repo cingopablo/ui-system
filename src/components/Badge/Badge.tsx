@@ -1,7 +1,8 @@
 import * as React from 'react'
-import { BadgeProps } from './Badge.types'
-import { StyledBadge } from './Badge.styles'
+
 import { Flex } from '../Flex/Flex'
+import { StyledBadge } from './Badge.styles'
+import { BadgeProps } from './Badge.types'
 
 export const Badge: React.FC<BadgeProps> = ({ variant = 'default', children, startIcon, endIcon }) => {
   return (

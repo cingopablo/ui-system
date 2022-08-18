@@ -1,5 +1,5 @@
 export const dark = {
-  '.cingo-dark': {
+  '.cingopablo-dark': {
     '--color-primary': 'hsl(var(--palette-purple-400))',
     '--color-primary-emphasis': 'hsl(var(--palette-purple-300))',
     '--color-primary-clear': 'hsl(var(--palette-purple-100))',

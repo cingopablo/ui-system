@@ -1,9 +1,10 @@
-import * as React from 'react'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
-import { Flex } from '../Flex/Flex'
+import * as React from 'react'
+
 import { Button } from '../Button/Button'
-import { H3 } from '../Typography'
+import { Flex } from '../Flex/Flex'
 import { Icon } from '../Icon/Icon'
+import { H3 } from '../Typography'
 
 type DialogHeaderProps = {
   title: string

@@ -1,6 +1,7 @@
 import * as React from 'react'
-import { LabelProps } from './Label.types'
+
 import { Text } from '../Typography'
+import { LabelProps } from './Label.types'
 
 export const Label: React.FC<LabelProps> = ({ children, ...rest }) => {
   return (

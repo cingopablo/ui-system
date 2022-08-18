@@ -1,7 +1,7 @@
+import { Meta } from '@storybook/react'
 import * as React from 'react'
 
 import { Logo } from '../Logo'
-import { Meta } from '@storybook/react'
 
 export default {
   title: 'UI System/Logo',

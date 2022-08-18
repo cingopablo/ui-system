@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { css } from '../../theming/stitches.config'
 
 const transitionLogo = css({
@@ -10,11 +12,11 @@ const transitionLogo = css({
 export const Logo = () => {
   return (
     <svg
-      width="36"
-      height="38"
-      viewBox="0 0 36 38"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      width={'36'}
+      height={'38'}
+      viewBox={'0 0 36 38'}
+      fill={'none'}
+      xmlns={'http://www.w3.org/2000/svg'}
       className={transitionLogo()}>
       <path
         fillRule={'evenodd'}

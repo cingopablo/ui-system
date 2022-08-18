@@ -4,6 +4,6 @@ const { config, css, getCssText, globalCss, keyframes, styled, theme } = createS
 
 export type CSS = StitchesCSS<typeof config>
 
-export type { VariantProps } from '@stitches/react'
 export { shadows } from './tokens/shadows'
+export type { VariantProps } from '@stitches/react'
 export { config, css, getCssText, globalCss, keyframes, styled, theme }

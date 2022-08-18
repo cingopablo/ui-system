@@ -1,5 +1,5 @@
-// import useKeyboardShortcut from '../useKeyboardShortcut'
 import React from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 enum Theme {
   LIGHT = 'light',
@@ -31,8 +31,8 @@ const useDarkMode = (): [Theme, (theme?: Theme) => void] => {
     setThemeState(prevState => {
       const nextState = themeValue ? themeValue : prevState === Theme.LIGHT ? Theme.DARK : Theme.LIGHT
 
-      document.body.classList.remove(prevState)
-      document.body.classList.add(nextState)
+      document.body.classList.remove(`cingopablo-${prevState}`)
+      document.body.classList.add(`cingopablo-${nextState}`)
       document.documentElement.style.setProperty('color-scheme', nextState)
       storage.set(nextState)
 
@@ -57,7 +57,7 @@ const useDarkMode = (): [Theme, (theme?: Theme) => void] => {
 }
 
 type ThemeProviderProps = {
-  children: any
+  children: React.ReactNode
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
@@ -66,7 +66,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     setThemeStateEnhanced()
   }, [setThemeStateEnhanced])
 
-  // useKeyboardShortcut('ctrl+t', toggleDark)
+  useHotkeys('control+t', toggleDark)
 
   React.useEffect(() => {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {

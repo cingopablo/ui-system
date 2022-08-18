@@ -1,8 +1,6 @@
+import { Meta } from '@storybook/react'
 import * as React from 'react'
 
-import { Grid } from '../../Grid/Grid'
-
-import { Meta } from '@storybook/react'
 import { Label } from '../Label'
 
 export default {
@@ -19,4 +17,4 @@ export default {
   },
 } as Meta
 
-export const _Label = () => <Label>{'This is a label'}</Label>
+export const _Label = () => <Label>This is a label</Label>

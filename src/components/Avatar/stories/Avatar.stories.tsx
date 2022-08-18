@@ -1,6 +1,8 @@
 import { Meta } from '@storybook/react'
-import { Avatar } from '../Avatar'
+import React from 'react'
+
 import { Grid } from '../../Grid/Grid'
+import { Avatar } from '../Avatar'
 
 export default {
   title: 'UI System/Avatar',

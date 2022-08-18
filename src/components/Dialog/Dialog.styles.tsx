@@ -1,6 +1,6 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog'
+
 import { keyframes, styled } from '../../theming/stitches.config'
-import * as React from 'react'
 
 const slideUpAndFadeIn = keyframes({
   '0%': { opacity: 0, transform: 'translate(-50%, -50%) scale(.86)' },

@@ -1,11 +1,10 @@
+import { Meta } from '@storybook/react'
 import * as React from 'react'
 
-import { Meta } from '@storybook/react'
 import { Button } from '../../Button/Button'
 import { Dialog } from '../Dialog'
-import { Box } from '../../Box/Box'
-import { DialogHeader } from '../DialogHeader'
 import { DialogContent } from '../DialogContent'
+import { DialogHeader } from '../DialogHeader'
 
 export default {
   title: 'UI System/Dialog',
@@ -19,7 +18,7 @@ export const _Dialog = () => {
       <Button onClick={() => setIsOpen(true)}>Open dialog</Button>
       <Dialog open={isOpen} onOpenChange={value => setIsOpen(value)}>
         <DialogHeader title={'Title'} />
-        <DialogContent>{'here is the content'}</DialogContent>
+        <DialogContent>here is the content</DialogContent>
       </Dialog>
     </React.Fragment>
   )

@@ -1,7 +1,8 @@
 import * as React from 'react'
+
+import { Flex } from '../Flex/Flex'
 import { StyledButton } from './Button.styles'
 import { ButtonProps } from './Button.types'
-import { Flex } from '../Flex/Flex'
 
 export const Button = React.forwardRef(
   <T extends object>(props: ButtonProps<T>, ref: React.ForwardedRef<HTMLButtonElement>) => {
