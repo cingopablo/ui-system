@@ -14,6 +14,7 @@ export const colors = {
   '--palette-gray-900': 'var(--base-gray) 10%',
   // Base Purple
   '--base-purple': '243deg 75%',
+  '--palette-purple-20': 'var(--base-purple) 98%',
   '--palette-purple-50': 'var(--base-purple) 95%',
   '--palette-purple-100': 'var(--base-purple) 90%',
   '--palette-purple-200': 'var(--base-purple) 80%',
