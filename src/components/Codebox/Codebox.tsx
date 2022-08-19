@@ -1,19 +1,12 @@
-import {
-  SandpackPredefinedTemplate,
-  SandpackOptions,
-  SandpackProvider,
-  SandpackLayout,
-  SandpackCodeEditor,
-  SandpackPreview,
-} from '@codesandbox/sandpack-react'
+import Sandpack from '@codesandbox/sandpack-react'
 import React from 'react'
 import { codeboxTheme } from './Codebox.theme'
 import setup from './Codebox.setup'
 import { CodeboxWrapper } from './Codebox.styles'
 
 interface CodeboxBaseProps {
-  template?: SandpackPredefinedTemplate
-  options?: SandpackOptions
+  template?: Sandpack.SandpackPredefinedTemplate
+  options?: Sandpack.SandpackOptions
   files: Record<string, any>
   dependencies?: Record<string, string>
   autorun?: boolean
@@ -40,7 +33,7 @@ const defaultEditorOptions = {
   editorHeight: 520,
 }
 
-const defaultFilesByTemplate: Record<SandpackPredefinedTemplate, any> = {
+const defaultFilesByTemplate: Record<Sandpack.SandpackPredefinedTemplate, any> = {
   react: setup,
   'react-ts': '',
   vanilla: '',
@@ -66,7 +59,7 @@ export const Codebox: React.FC<CodeboxProps> = ({
 
   return (
     <CodeboxWrapper>
-      <SandpackProvider
+      <Sandpack.SandpackProvider
         template={template}
         theme={codeboxTheme}
         files={{
@@ -77,9 +70,9 @@ export const Codebox: React.FC<CodeboxProps> = ({
           dependencies: dependencies || {},
         }}
         options={{ autorun }}>
-        <SandpackLayout>
+        <Sandpack.SandpackLayout>
           {!renderOnly ? (
-            <SandpackCodeEditor
+            <Sandpack.SandpackCodeEditor
               {...defaultEditorOptions}
               style={{
                 height: defaultEditorOptions.editorHeight,
@@ -90,7 +83,7 @@ export const Codebox: React.FC<CodeboxProps> = ({
             />
           ) : null}
           {!editorOnly ? (
-            <SandpackPreview
+            <Sandpack.SandpackPreview
               showNavigator={defaultEditorOptions.showNavigator}
               style={{
                 height: defaultEditorOptions.editorHeight,
@@ -100,10 +93,8 @@ export const Codebox: React.FC<CodeboxProps> = ({
               }}
             />
           ) : null}
-        </SandpackLayout>
-      </SandpackProvider>
+        </Sandpack.SandpackLayout>
+      </Sandpack.SandpackProvider>
     </CodeboxWrapper>
   )
 }
-
-export const CodeboxProvider = SandpackProvider
