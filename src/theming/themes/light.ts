@@ -3,6 +3,7 @@ export const light = {
     '--color-primary': 'hsl(var(--palette-purple-600))',
     '--color-primary-emphasis': 'hsl(var(--palette-purple-500))',
     '--color-primary-clear': 'hsl(var(--palette-purple-100))',
+    '--color-header': 'hsla(var(--palette-gray-20), 50%)',
     '--color-background': 'hsl(var(--palette-gray-20))',
     '--color-background-overlay': 'hsl(var(--palette-gray-00))',
     '--color-text-primary': 'hsl(var(--palette-purple-900))',
