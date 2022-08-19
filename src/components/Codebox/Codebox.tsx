@@ -105,3 +105,5 @@ export const Codebox: React.FC<CodeboxProps> = ({
     </CodeboxWrapper>
   )
 }
+
+export const CodeboxProvider = SandpackProvider
