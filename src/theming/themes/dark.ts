@@ -3,7 +3,7 @@ export const dark = {
     '--color-primary': 'hsl(var(--palette-purple-400))',
     '--color-primary-emphasis': 'hsl(var(--palette-purple-300))',
     '--color-primary-clear': 'hsl(var(--palette-purple-100))',
-    '--color-header': 'hsla(var(--palette-purple-900), 50%)',
+    '--color-header': 'hsl(var(--palette-purple-900) / 60%)',
     '--color-background': 'hsl(var(--palette-purple-900))',
     '--color-background-overlay': 'hsl(var(--palette-purple-850))',
     '--color-text-primary': 'hsl(var(--palette-gray-20))',
