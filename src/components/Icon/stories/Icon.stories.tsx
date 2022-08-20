@@ -21,5 +21,7 @@ export const _Icon = () => (
     <Icon.RSS />
     <Icon.Return />
     <Icon.CMD />
+    <Icon.DarkMode />
+    <Icon.LightMode />
   </Flex>
 )

@@ -260,3 +260,61 @@ export const ChevronRightIcon = (props: IconProps) => (
     <path d={'M8 20L16 12L8 4'} />
   </StyledSVG>
 )
+
+export const DarkModeIcon = (props: IconProps) => (
+  <StyledSVG
+    xmlns={'http://www.w3.org/2000/svg'}
+    width={24}
+    height={24}
+    viewBox={'0 0 24 24'}
+    fill={'none'}
+    stroke={'currentColor'}
+    strokeWidth={1}
+    role={'img'}
+    {...props}>
+    <path
+      fill={'none'}
+      d={
+        'M21.9146 13.3131C20.5584 14.3703 18.8528 15.0002 17 15.0002C12.5817 15.0002 9 11.4185 9 7.00017C9 5.14733 9.62989 3.4416 10.6872 2.08545C5.78475 2.7283 2 6.92218 2 12C2 17.5229 6.47715 22 12 22C17.0778 22 21.2716 18.2154 21.9146 13.3131Z'
+      }
+      clipRule={'evenodd'}
+      fillRule={'evenodd'}
+    />
+    <path
+      fill={'black'}
+      d={
+        'M21.9146 13.3131L22.9061 13.4431C22.9588 13.0408 22.7633 12.6465 22.411 12.445C22.0588 12.2436 21.6197 12.2749 21.2997 12.5244L21.9146 13.3131ZM10.6872 2.08545L11.4758 2.70031C11.7253 2.3803 11.7567 1.94126 11.5553 1.58902C11.3538 1.23678 10.9595 1.04118 10.5572 1.09394L10.6872 2.08545ZM21.2997 12.5244C20.113 13.4496 18.6222 14.0002 17 14.0002V16.0002C19.0833 16.0002 21.0038 15.2911 22.5294 14.1017L21.2997 12.5244ZM17 14.0002C13.134 14.0002 10 10.8662 10 7.00017H8C8 11.9707 12.0294 16.0002 17 16.0002V14.0002ZM10 7.00017C10 5.37788 10.5506 3.88701 11.4758 2.70031L9.89858 1.47059C8.70914 2.9962 8 4.91677 8 7.00017H10ZM3 12C3 7.43076 6.40601 3.65539 10.8172 3.07696L10.5572 1.09394C5.1635 1.8012 1 6.4136 1 12H3ZM12 21C7.02944 21 3 16.9706 3 12H1C1 18.0752 5.92487 23 12 23V21ZM20.9231 13.183C20.3445 17.5942 16.5692 21 12 21V23C17.5863 23 22.1987 18.8367 22.9061 13.4431L20.9231 13.183Z'
+      }
+    />
+  </StyledSVG>
+)
+export const LightModeIcon = (props: IconProps) => (
+  <StyledSVG
+    xmlns={'http://www.w3.org/2000/svg'}
+    width={24}
+    height={24}
+    viewBox={'0 0 24 24'}
+    fill={'none'}
+    stroke={'currentColor'}
+    strokeWidth={2}
+    role={'img'}
+    strokeLinejoin={'round'}
+    strokeLinecap={'round'}
+    {...props}>
+    <path strokeMiterlimit={'10'} d={'M22 12H19'} />
+    <path strokeMiterlimit={'10'} d={'M5 12H2'} />
+    <path strokeMiterlimit={'10'} d={'M12 22V19'} />
+    <path strokeMiterlimit={'10'} d={'M12 5V2'} />
+    <path strokeMiterlimit={'10'} d={'M19.07 19.07L16.95 16.95'} />
+    <path strokeMiterlimit={'10'} d={'M7.05005 7.04999L4.93005 4.92999'} />
+    <path strokeMiterlimit={'10'} d={'M7.05005 16.95L4.93005 19.07'} />
+    <path strokeMiterlimit={'10'} d={'M19.07 4.92999L16.95 7.04999'} />
+    <path
+      strokeMiterlimit={'10'}
+      fill={'none'}
+      d={
+        'M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z'
+      }
+    />
+  </StyledSVG>
+)

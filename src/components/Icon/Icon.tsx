@@ -4,9 +4,11 @@ import {
   ArrowUpIcon,
   ChevronRightIcon,
   CloseIcon,
+  DarkModeIcon,
   ExternalLinkIcon,
   FolderIcon,
   InfoIcon,
+  LightModeIcon,
   OptionKeyIcon,
   ReturnIcon,
   RssIcon,
@@ -27,5 +29,7 @@ Icon.RSS = RssIcon
 Icon.Return = ReturnIcon
 Icon.CMD = OptionKeyIcon
 Icon.ChevronRight = ChevronRightIcon
+Icon.DarkMode = DarkModeIcon
+Icon.LightMode = LightModeIcon
 
 Icon.displayName = 'Icon'
