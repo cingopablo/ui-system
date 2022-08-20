@@ -1,14 +1,15 @@
-import * as React from 'react'
 import * as TooltipPrimitive from '@radix-ui/react-tooltip'
-import { TooltipProps } from './Tooltip.types'
-import { TooltipContent } from './Tooltip.styles'
+import * as React from 'react'
+
+import { VisuallyHidden } from '../VisuallyHidden/VisuallyHidden'
 import {
   DEFAULT_TOOLTIP_DELAY,
   DEFAULT_TOOLTIP_PORTAL,
   DEFAULT_TOOLTIP_SIDE,
   DEFAULT_TOOLTIP_SIDE_OFFSET,
 } from './Tooltip.constants'
-import { VisuallyHidden } from '../VisuallyHidden/VisuallyHidden'
+import { TooltipContent } from './Tooltip.styles'
+import { TooltipProps } from './Tooltip.types'
 
 const Tooltip = ({
   children,

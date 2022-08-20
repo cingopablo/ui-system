@@ -1,4 +1,6 @@
 import { Meta } from '@storybook/react'
+import React from 'react'
+
 import { Codebox } from '../Codebox'
 
 export default {

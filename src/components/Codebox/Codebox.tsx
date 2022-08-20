@@ -1,8 +1,9 @@
-import Sandpack from '@codesandbox/sandpack-react'
+import * as Sandpack from '@codesandbox/sandpack-react'
 import React from 'react'
-import { codeboxTheme } from './Codebox.theme'
+
 import setup from './Codebox.setup'
 import { CodeboxWrapper } from './Codebox.styles'
+import { codeboxTheme } from './Codebox.theme'
 
 interface CodeboxBaseProps {
   template?: Sandpack.SandpackPredefinedTemplate
