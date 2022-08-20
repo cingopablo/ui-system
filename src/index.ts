@@ -20,6 +20,7 @@ export { Text } from './components/Typography/Text'
 export { VisuallyHidden } from './components/VisuallyHidden/VisuallyHidden'
 
 /** HOOKS **/
+export { useScrollCheck } from './hooks/useScrollCheck'
 export { ThemeContext, ThemeProvider, useTheme } from './hooks/useTheme'
 export { isHotkeyPressed, useHotkeys } from 'react-hotkeys-hook'
 
