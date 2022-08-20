@@ -9,8 +9,7 @@ export const shadows = {
     1px 2px 2px hsl(var(--color-shadow) / 0.2),
     2px 4px 4px hsl(var(--color-shadow) / 0.2),
     4px 8px 8px hsl(var(--color-shadow) / 0.2),
-    8px 16px 16px hsl(var(--color-shadow) / 0.2),
-    16px 32px 32px hsl(var(--color-shadow) / 0.2)
+    8px 16px 16px hsl(var(--color-shadow) / 0.2)
   `,
   xlarge: `
     1px 2px 2px hsl(var(--color-shadow) / 0.25),
