@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/react'
 import * as React from 'react'
 
+import { Grid } from '../../Grid/Grid'
 import { Logo } from '../Logo'
 
 export default {
@@ -17,4 +18,11 @@ export default {
   },
 } as Meta
 
-export const _Logo = () => <Logo />
+export const _Logo = () => (
+  <Grid gap={4}>
+    <Logo size={25} />
+    <Logo size={30} />
+    <Logo size={35} />
+    <Logo />
+  </Grid>
+)
