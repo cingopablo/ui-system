@@ -29,38 +29,38 @@ const selection = {
   },
 }
 
-const a = {
-  a: {
-    fontSize: 'var(--font-size-2)',
-    fontWeight: 'var(--font-weight-3)',
-    color: 'var(--color, var(--color-primary))',
-    textDecoration: 'none',
-    transition: 'color 150ms',
-    position: 'relative',
-    width: 'max-content',
-
-    '&::after': {
-      content: "''",
-      position: 'absolute',
-      width: '100%',
-      left: 0,
-      right: 0,
-      bottom: -2,
-      height: '2px',
-      backgroundColor: 'var(--color-primary-emphasis)',
-      opacity: 0,
-      transition: 'opacity 350ms',
-    },
-
-    '&:hover': {
-      '--color': 'var(--color-primary-emphasis)',
-    },
-
-    '&:hover:after': {
-      opacity: 1,
-    },
-  },
-}
+// const a = {
+//   a: {
+//     fontSize: 'var(--font-size-2)',
+//     fontWeight: 'var(--font-weight-3)',
+//     color: 'var(--color, var(--color-primary))',
+//     textDecoration: 'none',
+//     transition: 'color 150ms',
+//     position: 'relative',
+//     width: 'max-content',
+//
+//     '&::after': {
+//       content: "''",
+//       position: 'absolute',
+//       width: '100%',
+//       left: 0,
+//       right: 0,
+//       bottom: -2,
+//       height: '2px',
+//       backgroundColor: 'var(--color-primary-emphasis)',
+//       opacity: 0,
+//       transition: 'opacity 350ms',
+//     },
+//
+//     '&:hover': {
+//       '--color': 'var(--color-primary-emphasis)',
+//     },
+//
+//     '&:hover:after': {
+//       opacity: 1,
+//     },
+//   },
+// }
 
 export const globalStyles = globalCss({
   ':root': {
@@ -73,7 +73,6 @@ export const globalStyles = globalCss({
   ...global,
   ...html,
   ...selection,
-  ...a,
   ...light,
   ...dark,
 })
