@@ -4,6 +4,7 @@ export const StyledCard = styled('div', {
   padding: 'var(--spacing-5)',
   borderRadius: 'var(--border-radius-3)',
   color: 'var(--color-text-primary)',
+  transition: 'box-shadow 250ms',
   boxShadow: shadows.small,
 
   variants: {
@@ -28,9 +29,17 @@ export const StyledCard = styled('div', {
         background: 'var(--color-danger-clear)',
       },
     },
+    hoverable: {
+      true: {
+        '&:hover': {
+          boxShadow: shadows.medium,
+        },
+      },
+    },
   },
 
   defaultVariants: {
     variant: 'default',
+    hoverable: false,
   },
 })
