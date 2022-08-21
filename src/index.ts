@@ -1,4 +1,5 @@
 // Here we export the components
+export { Anchor } from './components/Anchor/Anchor'
 export { Avatar } from './components/Avatar/Avatar'
 export { Badge } from './components/Badge/Badge'
 export { Box } from './components/Box/Box'
