@@ -282,6 +282,7 @@ export const DarkModeIcon = (props: IconProps) => (
     />
   </StyledSVG>
 )
+
 export const LightModeIcon = (props: IconProps) => (
   <StyledSVG
     xmlns={'http://www.w3.org/2000/svg'}
@@ -310,5 +311,23 @@ export const LightModeIcon = (props: IconProps) => (
         'M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z'
       }
     />
+  </StyledSVG>
+)
+
+export const EmailIcon = (props: IconProps) => (
+  <StyledSVG
+    xmlns={'http://www.w3.org/2000/svg'}
+    width={24}
+    height={24}
+    viewBox={'0 0 24 24'}
+    fill={'none'}
+    stroke={'currentColor'}
+    strokeWidth={2}
+    role={'img'}
+    strokeLinejoin={'round'}
+    strokeLinecap={'round'}
+    {...props}>
+    <path strokeMiterlimit={'10'} d={'M22 2C22 2 10.98 13.02 10.97 13.03L14.41 22L22 2Z'} />
+    <path strokeMiterlimit={'10'} d={'M22 2L2 9.59L10.97 13.03L22 2Z'} />
   </StyledSVG>
 )

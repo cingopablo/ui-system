@@ -5,6 +5,7 @@ import {
   ChevronRightIcon,
   CloseIcon,
   DarkModeIcon,
+  EmailIcon,
   ExternalLinkIcon,
   FolderIcon,
   InfoIcon,
@@ -31,5 +32,6 @@ Icon.CMD = OptionKeyIcon
 Icon.ChevronRight = ChevronRightIcon
 Icon.DarkMode = DarkModeIcon
 Icon.LightMode = LightModeIcon
+Icon.EmailIcon = EmailIcon
 
 Icon.displayName = 'Icon'
