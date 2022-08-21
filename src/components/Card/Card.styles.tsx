@@ -1,30 +1,31 @@
-import { styled } from '../../theming/stitches.config'
+import { shadows, styled } from '../../theming/stitches.config'
 
 export const StyledCard = styled('div', {
   padding: 'var(--spacing-5)',
   borderRadius: 'var(--border-radius-3)',
   color: 'var(--color-text-primary)',
+  boxShadow: shadows.small,
+
   variants: {
     variant: {
       default: {
         background: 'var(--color-background-overlay)',
-        boxShadow: '0 0 0 1px var(--color-shadow)',
       },
       info: {
+        '--color-shadow': 'var(--color-shadow-info)',
         background: 'var(--color-info-clear)',
-        boxShadow: '0 0 0 1px var(--color-info-emphasis)',
       },
       success: {
+        '--color-shadow': 'var(--color-shadow-success)',
         background: 'var(--color-success-clear)',
-        boxShadow: '0 0 0 1px var(--color-success-emphasis)',
       },
       warning: {
+        '--color-shadow': 'var(--color-shadow-warning)',
         background: 'var(--color-warning-clear)',
-        boxShadow: '0 0 0 1px var(--color-warning-emphasis)',
       },
       danger: {
+        '--color-shadow': 'var(--color-shadow-danger)',
         background: 'var(--color-danger-clear)',
-        boxShadow: '0 0 0 1px var(--color-danger-emphasis)',
       },
     },
   },
