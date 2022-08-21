@@ -2,6 +2,7 @@
 export { Anchor } from './components/Anchor/Anchor'
 export { Avatar } from './components/Avatar/Avatar'
 export { Badge } from './components/Badge/Badge'
+export { Blockquote } from './components/Blockquote/Blockquote'
 export { Box } from './components/Box/Box'
 export { Button } from './components/Button/Button'
 export { Card } from './components/Card/Card'
