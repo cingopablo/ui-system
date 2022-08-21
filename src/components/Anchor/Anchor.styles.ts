@@ -53,5 +53,6 @@ export const AnchorWrapper = styled('a', {
   },
   defaultVariants: {
     variant: 'primary',
+    underline: false,
   },
 })

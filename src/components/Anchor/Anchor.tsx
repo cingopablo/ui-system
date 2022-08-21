@@ -10,3 +10,4 @@ export const Anchor: React.FC<AnchorProps> = ({ variant = 'primary', underline =
     </AnchorWrapper>
   )
 }
+Anchor.displayName = 'Anchor'
