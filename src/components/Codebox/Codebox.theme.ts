@@ -1,8 +1,8 @@
 export const codeboxTheme = {
   colors: {
-    hover: 'var(--color-primary)',
-    clickable: 'var(--color-font-secondary)',
-    accent: 'var(--color-primary)',
+    hover: 'var(--color-text-primary)',
+    clickable: 'var(--color-text-tertiary)',
+    accent: 'var(--color-text-primary)',
     errorSurface: 'var(--code-surface-error)',
     error: 'var(--color-danger)',
     surface3: 'var(--code-surface-3)',

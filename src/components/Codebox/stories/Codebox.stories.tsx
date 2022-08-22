@@ -17,6 +17,22 @@ export default {
   },
 } as Meta
 
+const code = `this is some random code`
+
 export const _Codebox = () => {
-  return <Codebox files={{}} autorun />
+  return (
+    <React.Fragment>
+      <Codebox autorun />
+      <Codebox
+        files={{
+          '/App.js': code,
+        }}
+        options={{
+          readOnly: true,
+        }}
+        autorun
+        editorOnly
+      />
+    </React.Fragment>
+  )
 }

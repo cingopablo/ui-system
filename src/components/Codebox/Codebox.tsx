@@ -8,7 +8,7 @@ import { codeboxTheme } from './Codebox.theme'
 interface CodeboxBaseProps {
   template?: Sandpack.SandpackPredefinedTemplate
   options?: Sandpack.SandpackOptions
-  files: Record<string, any>
+  files?: Record<string, any>
   dependencies?: Record<string, string>
   autorun?: boolean
   editorOnly?: boolean
