@@ -8,6 +8,7 @@ export const CodeboxWrapper = styled('div', {
 
     '@media (max-width: 600px)': {
       display: 'block',
+      overflow: 'hidden',
     },
   },
   '.cm-gutterElement': {
