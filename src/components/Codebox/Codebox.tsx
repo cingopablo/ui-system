@@ -70,7 +70,7 @@ export const Codebox: React.FC<CodeboxProps> = ({
         customSetup={{
           dependencies: dependencies || {},
         }}
-        options={{ autorun }}>
+        options={{ ...options, autorun }}>
         <Sandpack.SandpackLayout>
           {!renderOnly ? (
             <Sandpack.SandpackCodeEditor
