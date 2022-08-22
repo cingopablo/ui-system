@@ -331,3 +331,25 @@ export const EmailIcon = (props: IconProps) => (
     <path strokeMiterlimit={'10'} d={'M22 2L2 9.59L10.97 13.03L22 2Z'} />
   </StyledSVG>
 )
+
+export const CursorIcon = (props: IconProps) => (
+  <StyledSVG
+    xmlns={'http://www.w3.org/2000/svg'}
+    width={24}
+    height={24}
+    viewBox={'0 0 24 24'}
+    fill={'none'}
+    stroke={'currentColor'}
+    strokeWidth={2}
+    role={'img'}
+    strokeLinejoin={'round'}
+    strokeLinecap={'round'}
+    {...props}>
+    <path
+      strokeMiterlimit={'10'}
+      d={
+        'M5 2.99995V20.7999C5 21.1999 5.5 21.4999 5.9 21.1999L10.9 16.1999C11.3 15.7999 11.9 15.4999 12.6 15.3999L20 14.1999C20.4 14.0999 20.6 13.5999 20.2 13.2999L5.8 2.59995C5.5 2.39995 5 2.59995 5 2.99995Z'
+      }
+    />
+  </StyledSVG>
+)

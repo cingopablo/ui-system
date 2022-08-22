@@ -4,6 +4,7 @@ import {
   ArrowUpIcon,
   ChevronRightIcon,
   CloseIcon,
+  CursorIcon,
   DarkModeIcon,
   EmailIcon,
   ExternalLinkIcon,
@@ -33,5 +34,6 @@ Icon.ChevronRight = ChevronRightIcon
 Icon.DarkMode = DarkModeIcon
 Icon.LightMode = LightModeIcon
 Icon.EmailIcon = EmailIcon
+Icon.CursorIcon = CursorIcon
 
 Icon.displayName = 'Icon'
