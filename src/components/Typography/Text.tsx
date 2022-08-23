@@ -39,6 +39,7 @@ export const Text = styled('span', {
       large: { ...text.large },
       xlarge: { ...text.xlarge },
       xxlarge: { ...text.xxlarge },
+      xxxlarge: { ...text.xxxlarge },
     },
     ellipsis: {
       true: {
