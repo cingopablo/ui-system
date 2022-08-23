@@ -1,10 +1,8 @@
 import { styled } from '../../theming/stitches.config'
-import { text } from '../../theming/tokens'
 
 export const AnchorWrapper = styled('a', {
   fontSize: 'inherit',
   lineHeight: 'inherit',
-  fontFamily: text.button.fontFamily,
   fontWeight: 'var(--font-weight-3)',
   wordBreak: 'break-word',
   textDecoration: 'none',

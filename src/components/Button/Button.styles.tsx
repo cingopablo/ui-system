@@ -6,7 +6,6 @@ export const StyledButton = styled('button', {
   cursor: 'pointer',
   fontSize: text.button.fontSize,
   fontWeight: text.button.fontWeight,
-  fontFamily: text.button.fontFamily,
   height: '40px',
   width: 'max-content',
   padding: '0 var(--spacing-4)',
