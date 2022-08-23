@@ -19,7 +19,7 @@ export default {
   },
 } as Meta
 
-export const _Parallax = () => (
+export const _ParallaxText = () => (
   <Grid gap={4}>
     <ParallaxText baseVelocity={-5}>
       <H1>Framer Motion</H1>

@@ -5,7 +5,7 @@ import React from 'react'
 import { ParallaxScroller, ParallaxSpan, ParallaxWrapper } from './Parallax.styles'
 import { ParallaxProps } from './Parallax.types'
 
-export const ParallaxText = ({ children, baseVelocity = 100 }: ParallaxProps) => {
+export const ParallaxText = ({ children, baseVelocity = 100, css }: ParallaxProps) => {
   const baseX = useMotionValue(0)
   const { scrollY } = useScroll()
   const scrollVelocity = useVelocity(scrollY)
@@ -53,7 +53,7 @@ export const ParallaxText = ({ children, baseVelocity = 100 }: ParallaxProps) =>
    * dynamically generated number of children.
    */
   return (
-    <ParallaxWrapper>
+    <ParallaxWrapper css={css}>
       <ParallaxScroller style={{ x }}>
         <ParallaxSpan>{children}</ParallaxSpan>
         <ParallaxSpan>{children}</ParallaxSpan>
