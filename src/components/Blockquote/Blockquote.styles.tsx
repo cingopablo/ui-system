@@ -1,10 +1,13 @@
 import { styled } from '../../theming/stitches.config'
 
 export const BlockquoteWrapper = styled('blockquote', {
+  margin: '0 -50vw 2.25rem -50vw',
+  position: 'relative',
+  left: '50%',
+  right: '50%',
+  width: '100vw',
   padding: 'var(--spacing-7)',
   textAlign: 'center',
-  margin: 0,
-  width: '100vw',
   variants: {
     variant: {
       primary: {
