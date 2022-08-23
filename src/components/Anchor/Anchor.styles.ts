@@ -48,11 +48,11 @@ export const AnchorWrapper = styled('a', {
         borderColor: 'var(--border-color, transparent)',
         '&:hover': {
           '&:not(:disabled)': {
-            '--border-color': 'var(--color-primary)',
+            '--border-color': 'var(--color-primary-emphasis)',
           },
         },
         '&:focus-visible': {
-          '--border-color': 'var(--color-primary)',
+          '--border-color': 'var(--color-primary-emphasis)',
         },
       },
     },
