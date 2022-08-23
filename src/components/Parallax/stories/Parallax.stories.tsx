@@ -1,13 +1,13 @@
 import { Meta } from '@storybook/react'
 import React from 'react'
 
-import { styled } from '../../../theming/stitches.config'
 import { Grid } from '../../Grid/Grid'
-import { Parallax } from '../Parallax'
+import { H1, Text } from '../../Typography'
+import { ParallaxText } from '../Parallax'
 
 export default {
-  title: 'UI System/Parallax',
-  component: Parallax,
+  title: 'UI System/Parallax Text',
+  component: ParallaxText,
   parameters: {
     backgrounds: {
       default: 'light',
@@ -19,57 +19,91 @@ export default {
   },
 } as Meta
 
-const Box = styled('div', {
-  width: '100px',
-  height: '100px',
-  backgroundColor: 'var(--color-primary)',
-})
-
 export const _Parallax = () => (
   <Grid gap={4}>
-    <div style={{ height: 50 }}></div>
-    <Parallax>
-      <Box />
-    </Parallax>
-
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
-    <Parallax>
-      <Box />
-    </Parallax>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
+    <ParallaxText baseVelocity={-5}>
+      <H1>Framer Motion</H1>
+    </ParallaxText>
+    <ParallaxText baseVelocity={5}>
+      <Text size={'xxxlarge'}>Scroll velocity</Text>
+    </ParallaxText>
   </Grid>
 )
