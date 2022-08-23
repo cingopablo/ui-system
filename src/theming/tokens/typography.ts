@@ -17,6 +17,7 @@ const sizes = {
   '--font-size-4': '1.667rem', // 30px
   '--font-size-5': '2rem', // 36px
   '--font-size-6': '2.667rem', // 48px
+  '--font-size-7': '3.333rem', // 60px
 }
 
 const weights = {
@@ -68,6 +69,11 @@ export const text = {
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
+  },
+  xxxlarge: {
+    fontSize: 'var(--font-size-7)',
+    fontWeight: 'var(--font-weight-2)',
+    lineHeight: 'var(--font-height-text)',
   },
   xxlarge: {
     fontSize: 'var(--font-size-6)',

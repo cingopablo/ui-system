@@ -24,5 +24,6 @@ export const _Icon = () => (
     <Icon.DarkMode />
     <Icon.LightMode />
     <Icon.EmailIcon />
+    <Icon.CursorIcon />
   </Flex>
 )

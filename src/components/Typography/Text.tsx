@@ -57,8 +57,11 @@ export const Text = styled('span', {
       tertiary: {
         color: 'var(--color-text-tertiary)',
       },
-      info: {
+      color: {
         color: 'var(--color-primary)',
+      },
+      info: {
+        color: 'var(--color-info)',
       },
       success: {
         color: 'var(--color-success)',
