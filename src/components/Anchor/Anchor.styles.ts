@@ -38,7 +38,13 @@ export const AnchorWrapper = styled('a', {
     },
     underline: {
       true: {
-        borderBottom: '2px solid',
+        borderBottom: '4px solid',
+        borderColor: 'var(--color-primary)',
+      },
+    },
+    hover: {
+      true: {
+        borderBottom: '4px solid',
         borderColor: 'var(--border-color, transparent)',
         '&:hover': {
           '&:not(:disabled)': {
@@ -54,5 +60,6 @@ export const AnchorWrapper = styled('a', {
   defaultVariants: {
     variant: 'primary',
     underline: false,
+    hover: true,
   },
 })
