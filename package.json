@@ -1,6 +1,6 @@
 {
   "name": "@cingopablo/ui-system",
-  "version": "0.3.33",
+  "version": "0.3.34",
   "files": [
     "dist"
   ],
@@ -38,10 +38,10 @@
     "react-hotkeys-hook": "^3.4.7"
   },
   "peerDependencies": {
+    "@motionone/utils": "^10.14.0",
     "framer-motion": "^7.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@motionone/utils": "^10.14.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
