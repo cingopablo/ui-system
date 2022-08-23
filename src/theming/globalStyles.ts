@@ -16,7 +16,7 @@ const global = {
 
 const html = {
   html: {
-    font: '112.5%/1.45 var(--font-display)',
+    font: '112.5%/1.45 var(--font-fallback)',
     ['-ms-text-size-adjust']: '100%',
     ['-webkit-text-size-adjust']: '100%',
   },
