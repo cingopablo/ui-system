@@ -7,7 +7,7 @@ export const Parallax: React.FC<ParallaxProps> = ({ children, offset = 50 }) => 
   const prefersReducedMotion = useReducedMotion()
   const [elementTop, setElementTop] = React.useState(0)
   const [clientHeight, setClientHeight] = React.useState(0)
-  const ref = React.useRef(null)
+  const ref = React.useRef<HTMLDivElement>(null)
 
   const { scrollY } = useScroll()
 
@@ -19,7 +19,7 @@ export const Parallax: React.FC<ParallaxProps> = ({ children, offset = 50 }) => 
 
   React.useLayoutEffect(() => {
     const element = ref.current
-    if (!element) {
+    if (element === null) {
       return
     }
     const onResize = () => {
