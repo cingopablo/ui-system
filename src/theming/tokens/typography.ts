@@ -5,7 +5,7 @@ const families = {
   '-webkit-font-smoothing': 'antialiased',
   '--font-fallback':
     "-apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  '--font-display': "'Vollkorn', var(--font-fallback)",
+  '--font-display': "'Neue Montreal', var(--font-fallback)",
   '--font-mono': "'Fira Code', monospace",
   '--font-numeric': "'Space Grotesk', var(--font-fallback)",
 }
