@@ -47,25 +47,25 @@ export const typography = {
 
 export const text = {
   h1: {
-    fontSize: 'var(--font-size-6)',
+    fontSize: 'var(--font-size-7)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
   },
   h2: {
-    fontSize: 'var(--font-size-5)',
+    fontSize: 'var(--font-size-6)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
   },
   h3: {
-    fontSize: 'var(--font-size-4)',
+    fontSize: 'var(--font-size-5)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
   },
   h4: {
-    fontSize: 'var(--font-size-3)',
+    fontSize: 'var(--font-size-4)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
