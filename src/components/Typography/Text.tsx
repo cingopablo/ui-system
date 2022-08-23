@@ -26,7 +26,7 @@ export const Text = styled('span', {
         fontFamily: 'var(--font-fallback)',
       },
       display: {
-        fontFamily: 'var(--font-display)',
+        fontFamily: 'var(--font-display) !important',
       },
       mono: {
         fontFamily: 'var(--font-mono)',
