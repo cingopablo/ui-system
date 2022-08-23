@@ -17,7 +17,9 @@ const sizes = {
   '--font-size-4': '1.667rem', // 30px
   '--font-size-5': '2rem', // 36px
   '--font-size-6': '2.667rem', // 48px
-  '--font-size-7': '3.333rem', // 60px
+  '--font-size-7': '3.556rem', // 64px
+  '--font-size-8': '4rem', // 72px
+  '--font-size-9': '4.444rem', // 80px
 }
 
 const weights = {
@@ -47,25 +49,25 @@ export const typography = {
 
 export const text = {
   h1: {
-    fontSize: 'var(--font-size-7)',
+    fontSize: 'var(--font-size-9)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
   },
   h2: {
-    fontSize: 'var(--font-size-6)',
+    fontSize: 'var(--font-size-8)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
   },
   h3: {
-    fontSize: 'var(--font-size-5)',
+    fontSize: 'var(--font-size-7)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
   },
   h4: {
-    fontSize: 'var(--font-size-4)',
+    fontSize: 'var(--font-size-6)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
