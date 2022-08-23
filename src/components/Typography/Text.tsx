@@ -22,6 +22,9 @@ export const Text = styled('span', {
       },
     },
     family: {
+      default: {
+        fontFamily: 'var(--font-fallback)',
+      },
       display: {
         fontFamily: 'var(--font-display)',
       },
@@ -96,7 +99,7 @@ export const Text = styled('span', {
     },
   },
   defaultVariants: {
-    family: 'display',
+    family: 'default',
     size: 'default',
     variant: 'primary',
     spaced: true,

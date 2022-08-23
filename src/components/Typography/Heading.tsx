@@ -15,6 +15,7 @@ const Heading = React.forwardRef<React.ElementRef<typeof DEFAULT_TAG>, HeadingPr
   return (
     <Text
       as={DEFAULT_TAG}
+      family={'display'}
       {...rest}
       ref={ref}
       css={{
