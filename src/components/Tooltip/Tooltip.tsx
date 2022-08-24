@@ -11,7 +11,7 @@ import {
 import { TooltipContent } from './Tooltip.styles'
 import { TooltipProps } from './Tooltip.types'
 
-const Tooltip = ({
+export const Tooltip = ({
   children,
   id,
   delayDuration = DEFAULT_TOOLTIP_DELAY,
@@ -44,5 +44,3 @@ const Tooltip = ({
 
 Tooltip.displayName = 'Tooltip'
 Tooltip.Provider = TooltipPrimitive.TooltipProvider
-
-export default Tooltip
