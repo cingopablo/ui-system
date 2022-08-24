@@ -35,7 +35,8 @@
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
     "bowser": "^2.11.0",
-    "react-hotkeys-hook": "^3.4.7"
+    "react-hotkeys-hook": "^3.4.7",
+    "react-intersection-observer": "^9.4.0"
   },
   "peerDependencies": {
     "@motionone/utils": "^10.14.0",

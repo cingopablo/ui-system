@@ -1,5 +1,6 @@
 // Here we export the components
 export { Anchor } from './components/Anchor/Anchor'
+export { AnimatedTitle } from './components/AnimatedTitle/AnimatedTitle'
 export { Avatar } from './components/Avatar/Avatar'
 export { Badge } from './components/Badge/Badge'
 export { Blockquote } from './components/Blockquote/Blockquote'

@@ -6,11 +6,11 @@ import { Text } from './Text'
 import { DEFAULT_TAG } from './Typography.constants'
 import { HeadingProps, HeadingSizeVariants, ShortHandHeadingProps } from './Typography.types'
 
+const { h1, h2, h3, h4 } = text
+export const headingCSS: Record<HeadingSizeVariants, CSS> = { h1, h2, h3, h4 }
+
 const Heading = React.forwardRef<React.ElementRef<typeof DEFAULT_TAG>, HeadingProps>((props, ref) => {
   const { size = 'h1', ...rest } = props
-
-  const { h1, h2, h3, h4 } = text
-  const headingCSS: Record<HeadingSizeVariants, CSS> = { h1, h2, h3, h4 }
 
   return (
     <Text
