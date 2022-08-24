@@ -20,9 +20,8 @@ export default {
 
 export const _Logo = () => (
   <Grid gap={4}>
-    <Logo size={25} />
-    <Logo size={30} />
-    <Logo size={35} />
+    <Logo size={'small'} />
     <Logo />
+    <Logo size={'large'} />
   </Grid>
 )
