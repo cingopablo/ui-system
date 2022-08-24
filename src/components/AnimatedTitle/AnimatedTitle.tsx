@@ -6,7 +6,7 @@ import { headingCSS, Text } from '../Typography'
 import { AnimatedTitleCharacter, AnimatedTitleWord } from './AnimatedTitle.styles'
 import { AnimatedTitleProps } from './AnimatedTitle.types'
 
-export const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ children, as = 'h1' }) => {
+export const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ children, as = 'h1', css }) => {
   const animation = useAnimation()
 
   const { ref, inView } = useInView({
@@ -48,6 +48,7 @@ export const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ children, as = 'h1
       as={as}
       css={{
         ...headingCSS[as],
+        ...css,
       }}
       aria-label={children}
       role={'heading'}>
