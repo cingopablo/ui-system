@@ -6,7 +6,7 @@ import { Grid } from '../../Grid/Grid'
 import { AnimatedTitle } from '../AnimatedTitle'
 
 export default {
-  title: 'UI System/Animated Title',
+  title: 'Animations/Animated Title',
   component: AnimatedTitle,
   parameters: {
     backgrounds: {
