@@ -28,6 +28,9 @@ export const BlockquoteWrapper = styled('blockquote', {
       danger: {
         backgroundColor: 'var(--color-danger-clear)',
       },
+      transparent: {
+        backgroundColor: 'transparent',
+      },
     },
   },
 })
