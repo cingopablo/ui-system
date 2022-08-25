@@ -33,6 +33,18 @@ export const BlockquoteWrapper = styled('blockquote', {
 })
 
 export const BlockquoteContent = styled('div', {
-  maxWidth: 'var(--max-width-large)',
   margin: '0 auto',
+  variants: {
+    width: {
+      full: {
+        maxWidth: '100%',
+      },
+      contained: {
+        maxWidth: 'var(--max-width-large)',
+      },
+    },
+  },
+  defaultVariants: {
+    width: 'contained',
+  },
 })
