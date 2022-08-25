@@ -5,7 +5,7 @@ import React from 'react'
 import { ParallaxScroller, ParallaxSpan, ParallaxWrapper } from './ParallaxText.styles'
 import { ParallaxProps } from './ParallaxText.types'
 
-export const ParallaxText = ({ children, baseVelocity = 10, css }: ParallaxProps) => {
+export const ParallaxText = ({ children, baseVelocity = 10, scrollOnly = false, css }: ParallaxProps) => {
   const baseX = useMotionValue(0)
   const { scrollY } = useScroll()
   const scrollVelocity = useVelocity(scrollY)
@@ -25,8 +25,11 @@ export const ParallaxText = ({ children, baseVelocity = 10, css }: ParallaxProps
       prevT.current = t
     }
 
+    // TODO: Redo this as it's not nice at all - for now it does the trick
     const timeDelta = t - prevT.current
-    let moveBy = directionFactor.current * baseVelocity * (timeDelta / 10000)
+    let moveBy = scrollOnly
+      ? directionFactor.current * baseVelocity * (timeDelta / 10000000000000)
+      : directionFactor.current * baseVelocity * (timeDelta / 10000)
 
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1
@@ -34,7 +37,9 @@ export const ParallaxText = ({ children, baseVelocity = 10, css }: ParallaxProps
       directionFactor.current = 1
     }
 
-    moveBy += directionFactor.current * moveBy * velocityFactor.get()
+    moveBy += scrollOnly
+      ? directionFactor.current * (directionFactor.current * baseVelocity * (timeDelta / 10000)) * velocityFactor.get()
+      : directionFactor.current * moveBy * velocityFactor.get()
 
     baseX.set(baseX.get() + moveBy)
 
