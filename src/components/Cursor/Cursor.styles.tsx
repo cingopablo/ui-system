@@ -4,7 +4,6 @@ import { styled } from '../../theming/stitches.config'
 
 export const CursorWrapper = styled('div', {
   cursor: 'none',
-  width: 'min-content',
 })
 
 export const CursorElement = styled(motion.div, {
