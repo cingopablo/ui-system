@@ -12,8 +12,8 @@ const families = {
 
 const sizes = {
   '--font-size-1': '16px;',
-  '--font-size-2': '1rem', // 18px Default
-  '--font-size-3': '1.333rem', // 24px
+  '--font-size-2': '1rem', // 18px
+  '--font-size-3': '1.333rem', // 24px Default
   '--font-size-4': '1.667rem', // 30px
   '--font-size-5': '2rem', // 36px
   '--font-size-6': '2.667rem', // 48px
@@ -106,7 +106,9 @@ export const text = {
     fontSize: 'var(--font-size-2)',
     fontWeight: 'var(--font-weight-2)',
     lineHeight: 'var(--font-height-text)',
+    letterSpacing: '0.5px',
   },
+
   caption: {
     fontSize: 'var(--font-size-1)',
     fontWeight: 'var(--font-weight-2)',

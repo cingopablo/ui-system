@@ -3,10 +3,10 @@ import React from 'react'
 
 import { Grid } from '../../Grid/Grid'
 import { H1, Text } from '../../Typography'
-import { ParallaxText } from '../Parallax'
+import { ParallaxText } from '../ParallaxText'
 
 export default {
-  title: 'UI System/Parallax Text',
+  title: 'Animations/ParallaxText',
   component: ParallaxText,
   parameters: {
     backgrounds: {
@@ -21,7 +21,7 @@ export default {
 
 export const _ParallaxText = () => (
   <Grid gap={4}>
-    <ParallaxText baseVelocity={-5}>
+    <ParallaxText baseVelocity={5}>
       <H1>Framer Motion</H1>
     </ParallaxText>
     <ParallaxText baseVelocity={5}>

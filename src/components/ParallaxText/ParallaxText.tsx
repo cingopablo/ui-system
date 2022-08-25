@@ -2,10 +2,10 @@ import { wrap } from '@motionone/utils'
 import { useAnimationFrame, useMotionValue, useScroll, useSpring, useTransform, useVelocity } from 'framer-motion'
 import React from 'react'
 
-import { ParallaxScroller, ParallaxSpan, ParallaxWrapper } from './Parallax.styles'
-import { ParallaxProps } from './Parallax.types'
+import { ParallaxScroller, ParallaxSpan, ParallaxWrapper } from './ParallaxText.styles'
+import { ParallaxProps } from './ParallaxText.types'
 
-export const ParallaxText = ({ children, baseVelocity = 100, css }: ParallaxProps) => {
+export const ParallaxText = ({ children, baseVelocity = 10, css }: ParallaxProps) => {
   const baseX = useMotionValue(0)
   const { scrollY } = useScroll()
   const scrollVelocity = useVelocity(scrollY)
@@ -26,12 +26,8 @@ export const ParallaxText = ({ children, baseVelocity = 100, css }: ParallaxProp
     }
 
     const timeDelta = t - prevT.current
-    let moveBy = directionFactor.current * baseVelocity * (timeDelta / 1000)
+    let moveBy = directionFactor.current * baseVelocity * (timeDelta / 10000)
 
-    /**
-     * This is what changes the direction of the scroll once we
-     * switch scrolling directions.
-     */
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1
     } else if (velocityFactor.get() > 0) {
@@ -45,13 +41,6 @@ export const ParallaxText = ({ children, baseVelocity = 100, css }: ParallaxProp
     prevT.current = t
   })
 
-  /**
-   * The number of times to repeat the child text should be dynamically calculated
-   * based on the size of the text and viewport. Likewise, the x motion value is
-   * currently wrapped between -20 and -45% - this 25% is derived from the fact
-   * we have four children (100% / 4). This would also want deriving from the
-   * dynamically generated number of children.
-   */
   return (
     <ParallaxWrapper css={css}>
       <ParallaxScroller style={{ x }}>
