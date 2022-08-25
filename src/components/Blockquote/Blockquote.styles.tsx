@@ -6,7 +6,7 @@ export const BlockquoteWrapper = styled('blockquote', {
   left: '50%',
   right: '50%',
   width: '100vw',
-  padding: 'var(--spacing-7)',
+  padding: 'var(--spacing-7) 0',
   textAlign: 'center',
   variants: {
     variant: {
