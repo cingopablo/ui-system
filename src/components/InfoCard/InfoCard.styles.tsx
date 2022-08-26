@@ -1,6 +1,6 @@
 import { shadows, styled } from '../../theming/stitches.config'
 
-export const StyledCard = styled('div', {
+export const InfoCardWrapper = styled('div', {
   padding: 'var(--spacing-5)',
   borderRadius: 'var(--border-radius-3)',
   color: 'var(--color-text-primary)',
@@ -29,24 +29,18 @@ export const StyledCard = styled('div', {
         background: 'var(--color-danger-clear)',
       },
     },
-    hoverable: {
+    hover: {
       true: {
         cursor: 'pointer',
         '&:hover': {
-          boxShadow: shadows.medium,
+          boxShadow: shadows.large,
         },
-      },
-    },
-    withoutPadding: {
-      true: {
-        padding: 0,
       },
     },
   },
 
   defaultVariants: {
     variant: 'default',
-    hoverable: false,
-    withoutPadding: false,
+    hover: false,
   },
 })

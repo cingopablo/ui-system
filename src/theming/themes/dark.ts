@@ -4,6 +4,7 @@ export const dark = {
     '--color-primary-emphasis': 'hsl(var(--palette-purple-300))',
     '--color-primary-clear': 'hsl(var(--palette-purple-100))',
     '--color-header': 'hsl(var(--palette-purple-900) / 60%)',
+    '--color-blur': 'hsl(var(--palette-purple-900) / 40%)',
     '--color-background': 'hsl(var(--palette-purple-900))',
     '--color-background-overlay': 'hsl(var(--palette-purple-850))',
     '--color-text-primary': 'hsl(var(--palette-gray-20))',

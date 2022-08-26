@@ -30,7 +30,10 @@ export const _Cursor = () => (
     <Cursor>
       <Box />
     </Cursor>
-    <Cursor variant={'secondary'}>
+    <Cursor variant={'secondary'} content={'See more'}>
+      <Box />
+    </Cursor>
+    <Cursor variant={'blur'} content={'See more'}>
       <Box />
     </Cursor>
   </Grid>

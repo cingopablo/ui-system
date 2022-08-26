@@ -10,5 +10,4 @@ export const AnimatedTitleWord = styled(motion.span, {
 
 export const AnimatedTitleCharacter = styled(motion.span, {
   display: 'inline-block',
-  marginRight: '-0.05em',
 })

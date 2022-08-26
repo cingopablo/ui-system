@@ -8,7 +8,7 @@ interface MousePosition {
   y: number
 }
 
-export const Cursor: React.FC<CursorProps> = ({ children, variant = 'primary', size = 70, content = 'hello' }) => {
+export const Cursor: React.FC<CursorProps> = ({ children, variant = 'primary', size = 100, content = 'hello' }) => {
   const [position, setPosition] = React.useState<MousePosition>({ x: 0, y: 0 })
   const [animate, setAnimate] = React.useState('default')
 
@@ -28,14 +28,14 @@ export const Cursor: React.FC<CursorProps> = ({ children, variant = 'primary', s
     default: {
       height: 32,
       width: 32,
-      x: position.x - 16,
-      y: position.y - 16,
+      x: position.x,
+      y: position.y,
     },
     enter: {
       height: size,
       width: size,
-      x: position.x - size / 2,
-      y: position.y - size / 2,
+      x: position.x,
+      y: position.y,
       opacity: 1,
     },
   }
