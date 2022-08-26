@@ -10,9 +10,9 @@ import {
 } from './ItemCard.styles'
 import { ItemCardProps } from './ItemCard.types'
 
-export const ItemCard: React.FC<ItemCardProps> = ({ title, cursor = 'See more', image, description, onClick }) => {
+export const ItemCard: React.FC<ItemCardProps> = ({ title, cursor = 'See more', image, description, onClick, css }) => {
   return (
-    <ItemCardWrapper onClick={onClick} hover={!!onClick}>
+    <ItemCardWrapper onClick={onClick} hover={!!onClick} css={css}>
       <Cursor variant={'blur'} content={cursor}>
         <ItemImageWrapper>{image}</ItemImageWrapper>
         <ItemTextWrapper>

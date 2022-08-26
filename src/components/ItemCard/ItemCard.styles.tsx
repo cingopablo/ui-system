@@ -26,7 +26,7 @@ export const ItemCardWrapper = styled('li', {
           filter: 'brightness(110%)',
 
           '> *': {
-            boxShadow: shadows.large,
+            boxShadow: shadows.xlarge,
           },
         },
       },
