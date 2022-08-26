@@ -9,4 +9,5 @@ export interface CardProps {
   hoverable?: boolean
   children: React.ReactNode
   css?: CSS
+  onClick?: () => void
 }
