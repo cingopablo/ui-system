@@ -31,9 +31,15 @@ export const StyledCard = styled('div', {
     },
     hoverable: {
       true: {
+        cursor: 'pointer',
         '&:hover': {
           boxShadow: shadows.medium,
         },
+      },
+    },
+    withoutPadding: {
+      true: {
+        padding: 0,
       },
     },
   },
@@ -41,5 +47,6 @@ export const StyledCard = styled('div', {
   defaultVariants: {
     variant: 'default',
     hoverable: false,
+    withoutPadding: false,
   },
 })

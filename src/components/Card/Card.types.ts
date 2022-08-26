@@ -9,4 +9,5 @@ export interface CardProps {
   children: React.ReactNode
   css?: CSS
   onClick?: () => void
+  withoutPadding?: boolean
 }
