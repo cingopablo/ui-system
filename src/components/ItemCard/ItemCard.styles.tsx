@@ -7,7 +7,7 @@ export const ItemImageWrapper = styled('span', {
   transition: 'filter 350ms',
   filter: 'brightness(70%)',
 
-  '> img': {
+  '> *': {
     transition: 'box-shadow 350ms',
     width: '100%',
     borderRadius: 'var(--border-radius-3)',
@@ -26,7 +26,7 @@ export const ItemCardWrapper = styled('li', {
         [`&:hover > div > ${ItemImageWrapper}`]: {
           filter: 'brightness(90%)',
 
-          '> img': {
+          '> *': {
             boxShadow: shadows.large,
           },
         },
