@@ -7,10 +7,18 @@ export const ItemImageWrapper = styled('span', {
   transition: 'filter 350ms',
 
   '> *': {
-    transition: 'box-shadow 350ms',
+    transition: 'box-shadow 350ms, transform 350ms',
     width: '100%',
     borderRadius: 'var(--border-radius-3)',
     boxShadow: shadows.small,
+
+    transform: 'scale(var(--button-scale, 1)) translateZ(0)',
+
+    '&:active': {
+      '&:not(:disabled)': {
+        '--button-scale': 0.98,
+      },
+    },
   },
 })
 
