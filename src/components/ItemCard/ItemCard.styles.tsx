@@ -5,7 +5,6 @@ import { Text } from '../Typography'
 
 export const ItemImageWrapper = styled('span', {
   transition: 'filter 350ms',
-  filter: 'brightness(70%)',
 
   '> *': {
     transition: 'box-shadow 350ms',
@@ -24,7 +23,7 @@ export const ItemCardWrapper = styled('li', {
     hover: {
       true: {
         [`&:hover > div > ${ItemImageWrapper}`]: {
-          filter: 'brightness(90%)',
+          filter: 'brightness(110%)',
 
           '> *': {
             boxShadow: shadows.large,
