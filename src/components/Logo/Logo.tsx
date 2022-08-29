@@ -8,7 +8,7 @@ export const Logo: React.FC<LogoProps> = ({ size = 'medium' }) => {
   const parsedSize = size === 'small' ? 'medium' : size === 'medium' ? 'large' : size === 'large' ? 'xlarge' : 'xxlarge'
   return (
     <Anchor href={'/'} hover={false}>
-      <Text size={parsedSize} weight={4}>
+      <Text as={'span'} size={parsedSize} weight={4}>
         pablo.
       </Text>
     </Anchor>
