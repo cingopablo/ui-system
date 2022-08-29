@@ -1,7 +1,7 @@
 import { styled } from '../../theming/stitches.config'
 import { text } from '../../theming/tokens'
 
-export const Text = styled('span', {
+export const Text = styled('p', {
   margin: '0 0 2rem 0',
   padding: 0,
   textRendering: 'optimizeLegibility',
@@ -76,16 +76,16 @@ export const Text = styled('span', {
     },
     weight: {
       1: {
-        fontWeight: 'var(--font-weight-1) !important',
+        fontWeight: 'var(--font-weight-1)',
       },
       2: {
-        fontWeight: 'var(--font-weight-2) !important',
+        fontWeight: 'var(--font-weight-2)',
       },
       3: {
-        fontWeight: 'var(--font-weight-3) !important',
+        fontWeight: 'var(--font-weight-3)',
       },
       4: {
-        fontWeight: 'var(--font-weight-4) !important',
+        fontWeight: 'var(--font-weight-4)',
       },
     },
     gradient: {
