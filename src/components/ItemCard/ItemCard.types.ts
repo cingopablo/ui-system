@@ -8,5 +8,6 @@ export interface ItemCardProps {
   title?: string
   description?: string
   cursor?: string
+  variant?: 'blur' | 'primary' | 'secondary'
   css?: CSS
 }

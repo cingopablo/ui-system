@@ -99,6 +99,7 @@ export const Text = styled('span', {
     family: 'display',
     size: 'default',
     variant: 'primary',
+    weight: 2,
     spaced: true,
   },
 })

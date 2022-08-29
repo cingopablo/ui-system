@@ -1,7 +1,4 @@
-import { motion } from 'framer-motion'
-
 import { shadows, styled } from '../../theming/stitches.config'
-import { Text } from '../Typography'
 
 export const ItemImageWrapper = styled('span', {
   transition: 'filter 350ms',
@@ -46,26 +43,11 @@ export const ItemCardWrapper = styled('li', {
   },
 })
 
-export const ItemTextWrapper = styled(motion.div, {
-  display: 'flex',
-  gap: 'var(--spacing-1)',
-  alignItems: 'center',
+export const ItemTextWrapper = styled('div', {
+  display: 'grid',
+  margin: 0,
 
-  '@media (max-width: 600px)': {
-    display: 'grid',
-    gap: 0,
+  '> *': {
+    marginBottom: 0,
   },
 })
-
-export const ItemCardTitle = styled(Text, {
-  '&:after': {
-    content: ' —',
-  },
-
-  '@media (max-width: 600px)': {
-    '&:after': {
-      content: '',
-    },
-  },
-})
-export const ItemCardDescription = styled(Text, {})
