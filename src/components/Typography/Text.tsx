@@ -76,16 +76,16 @@ export const Text = styled('span', {
     },
     weight: {
       1: {
-        fontWeight: 'var(--font-weight-1)',
+        fontWeight: 'var(--font-weight-1) !important',
       },
       2: {
-        fontWeight: 'var(--font-weight-2)',
+        fontWeight: 'var(--font-weight-2) !important',
       },
       3: {
-        fontWeight: 'var(--font-weight-3)',
+        fontWeight: 'var(--font-weight-3) !important',
       },
       4: {
-        fontWeight: 'var(--font-weight-4)',
+        fontWeight: 'var(--font-weight-4) !important',
       },
     },
     gradient: {
@@ -99,7 +99,6 @@ export const Text = styled('span', {
     family: 'display',
     size: 'default',
     variant: 'primary',
-    weight: 2,
     spaced: true,
   },
 })
