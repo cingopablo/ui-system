@@ -1,7 +1,7 @@
 import { styled } from '../../theming/stitches.config'
 import { text } from '../../theming/tokens'
 
-export const Text = styled('p', {
+export const Text = styled('span', {
   margin: '0 0 2rem 0',
   padding: 0,
   textRendering: 'optimizeLegibility',
