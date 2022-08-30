@@ -56,7 +56,7 @@ export const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ children, as = 'h1
         <AnimatedTitleWord
           key={index}
           ref={ref}
-          aria-hidden={true}
+          aria-hidden
           initial={'hidden'}
           animate={animation}
           variants={wordAnimation}
@@ -65,7 +65,7 @@ export const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ children, as = 'h1
             staggerChildren: 0.05,
           }}>
           {word.split('').map((character, index) => (
-            <AnimatedTitleCharacter aria-hidden={true} key={index} variants={characterAnimation}>
+            <AnimatedTitleCharacter aria-hidden key={index} variants={characterAnimation}>
               {character}
             </AnimatedTitleCharacter>
           ))}

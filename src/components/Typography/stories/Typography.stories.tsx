@@ -24,33 +24,31 @@ export default {
 export const _Text = () => (
   <Grid gap={6}>
     <Grid>
+      <Text>xxxlarge</Text>
+      <Text size={'xxxlarge'}>The quick brown fox jumps over the lazy dog</Text>
+    </Grid>
+    <Grid>
       <Text>xxlarge</Text>
-      <Text size={'caption'}>Font size: 48px (2.667rem) | Line height: X</Text>
       <Text size={'xxlarge'}>The quick brown fox jumps over the lazy dog</Text>
     </Grid>
     <Grid>
       <Text>xlarge</Text>
-      <Text size={'caption'}>Font size: 36px (2rem) | Line height: X</Text>
       <Text size={'xlarge'}>The quick brown fox jumps over the lazy dog</Text>
     </Grid>
     <Grid>
       <Text>large</Text>
-      <Text size={'caption'}>Font size: 30px (1.667rem) | Line height: X</Text>
       <Text size={'large'}>The quick brown fox jumps over the lazy dog</Text>
     </Grid>
     <Grid>
       <Text>medium</Text>
-      <Text size={'caption'}>Font size: 24px (1.333rem) | Line height: X</Text>
       <Text size={'medium'}>The quick brown fox jumps over the lazy dog</Text>
     </Grid>
     <Grid>
       <Text>default</Text>
-      <Text size={'caption'}>Font size: 18px (1rem) | Line height: X</Text>
       <Text>The quick brown fox jumps over the lazy dog</Text>
     </Grid>
     <Grid>
       <Text>caption</Text>
-      <Text size={'caption'}>Font size: 16px | Line height: X</Text>
       <Text size={'caption'}>The quick brown fox jumps over the lazy dog</Text>
     </Grid>
     <Grid>
@@ -158,4 +156,29 @@ export const _Variant = () => (
       <Text variant={'danger'}>The quick brown fox jumps over the lazy dog</Text>
     </Grid>
   </Grid>
+)
+
+export const _Gradient = () => (
+  <Text
+    size={'xxxlarge'}
+    weight={4}
+    gradient
+    // css={{
+    //   backgroundImage: `linear-gradient(
+    //           91.83deg,
+    //           hsl(var(--palette-pink-50)) -20.26%,
+    //           hsl(var(--palette-blue-20)) 20.55%,
+    //           hsl(var(--palette-indigo-30)) 60.81%
+    //         )`,
+    // }}
+    css={{
+      backgroundImage: `linear-gradient(
+        90deg,
+        hsl(var(--palette-purple-500)) 0%,
+        hsl(var(--palette-blue-350)) 55%,
+        hsl(var(--palette-blue-700)) 90%)
+      `,
+    }}>
+    This is a gradient text
+  </Text>
 )

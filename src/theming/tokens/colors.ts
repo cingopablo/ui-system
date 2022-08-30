@@ -50,6 +50,7 @@ export const colors = {
   '--base-red': '3deg 100%',
   '--palette-red-100': 'var(--base-red) 90%',
   '--palette-red-350': 'var(--base-red) 65%',
+  '--palette-red-500': 'var(--base-red) 50%',
   '--palette-red-550': 'var(--base-red) 45%',
   '--palette-red-700': 'var(--base-red) 30%',
   '--palette-red-800': 'var(--base-red) 20%',
