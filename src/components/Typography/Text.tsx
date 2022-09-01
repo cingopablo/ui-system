@@ -11,7 +11,6 @@ export const Text = styled('span', {
     outline: {
       true: {
         color: 'transparent !important',
-        WebkitTextStrokeColor: 'var(--color-text-primary)',
         WebkitTextStrokeWidth: '1px',
       },
     },
@@ -51,27 +50,35 @@ export const Text = styled('span', {
     variant: {
       primary: {
         color: 'var(--color-text-primary)',
+        WebkitTextStrokeColor: 'var(--color-text-primary)',
       },
       secondary: {
         color: 'var(--color-text-secondary)',
+        WebkitTextStrokeColor: 'var(--color-text-secondary)',
       },
       tertiary: {
         color: 'var(--color-text-tertiary)',
+        WebkitTextStrokeColor: 'var(--color-text-tertiary)',
       },
       color: {
         color: 'var(--color-primary)',
+        WebkitTextStrokeColor: 'var(--color-primary)',
       },
       info: {
         color: 'var(--color-info)',
+        WebkitTextStrokeColor: 'var(--color-info)',
       },
       success: {
         color: 'var(--color-success)',
+        WebkitTextStrokeColor: 'var(--color-success)',
       },
       warning: {
         color: 'var(--color-warning)',
+        WebkitTextStrokeColor: 'var(--color-warning)',
       },
       danger: {
         color: 'var(--color-danger)',
+        WebkitTextStrokeColor: 'var(--color-danger)',
       },
     },
     weight: {
