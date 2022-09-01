@@ -31,7 +31,7 @@ const weights = {
 
 const height = {
   '--font-height-text': '1.8',
-  '--font-height-heading': '1.55',
+  '--font-height-heading': '1.3',
 }
 
 const tracking = {
@@ -75,22 +75,22 @@ export const text = {
   xxxlarge: {
     fontSize: 'var(--font-size-7)',
     fontWeight: 'var(--font-weight-2)',
-    lineHeight: 'var(--font-height-text)',
+    lineHeight: 'var(--font-height-heading)',
   },
   xxlarge: {
     fontSize: 'var(--font-size-6)',
     fontWeight: 'var(--font-weight-2)',
-    lineHeight: 'var(--font-height-text)',
+    lineHeight: 'var(--font-height-heading)',
   },
   xlarge: {
     fontSize: 'var(--font-size-5)',
     fontWeight: 'var(--font-weight-2)',
-    lineHeight: 'var(--font-height-text)',
+    lineHeight: 'var(--font-height-heading)',
   },
   large: {
     fontSize: 'var(--font-size-4)',
     fontWeight: 'var(--font-weight-2)',
-    lineHeight: 'var(--font-height-text)',
+    lineHeight: 'var(--font-height-heading)',
   },
   medium: {
     fontSize: 'var(--font-size-3)',
