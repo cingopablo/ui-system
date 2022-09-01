@@ -13,7 +13,6 @@ export const ParallaxWrapper = styled('div', {
 })
 
 export const ParallaxScroller = styled(motion.div, {
-  textTransform: 'uppercase',
   display: 'flex',
   whiteSpace: 'nowrap',
   flexWrap: 'nowrap',
