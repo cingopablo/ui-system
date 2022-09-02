@@ -10,4 +10,5 @@ export interface ItemCardProps {
   cursor?: string
   variant?: 'blur' | 'primary' | 'secondary'
   css?: CSS
+  attributes: string[]
 }

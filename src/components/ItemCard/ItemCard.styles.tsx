@@ -1,53 +1,57 @@
-import { shadows, styled } from '../../theming/stitches.config'
+import { motion } from 'framer-motion'
 
-export const ItemImageWrapper = styled('span', {
-  transition: 'filter 350ms',
+import { styled } from '../../theming/stitches.config'
 
-  '> *': {
-    transition: 'box-shadow 350ms, transform 350ms',
-    width: '100%',
-    borderRadius: 'var(--border-radius-3)',
-    boxShadow: shadows.small,
-
-    transform: 'scale(var(--button-scale, 1)) translateZ(0)',
-
-    '&:active': {
-      '&:not(:disabled)': {
-        '--button-scale': 0.98,
-      },
-    },
-  },
+export const ItemCardWrapper = styled(motion.div, {
+  position: 'relative',
+  height: 500,
+  width: 320,
 })
 
-export const ItemCardWrapper = styled('li', {
-  listStyleType: 'none',
-  display: 'grid',
-  gap: 'var(--spacing-1)',
-
-  variants: {
-    hover: {
-      true: {
-        [`&:hover > div > ${ItemImageWrapper}`]: {
-          filter: 'brightness(110%)',
-
-          '> *': {
-            boxShadow: shadows.xlarge,
-          },
-        },
-      },
-    },
-  },
-
-  defaultVariants: {
-    hover: false,
-  },
+export const ItemImage = styled(motion.div, {
+  position: 'absolute',
+  zIndex: 2,
+  inset: 0,
+  overflow: 'hidden',
 })
 
-export const ItemTextWrapper = styled('div', {
-  display: 'grid',
-  margin: 0,
+export const ItemImageInner = styled(motion.div, {
+  height: 500,
+  width: 320,
+  position: 'relative',
+  inset: 0,
+})
 
-  '> *': {
-    marginBottom: 0,
+export const ItemImageBack = styled(motion.div, {
+  position: 'absolute',
+  zIndex: 1,
+  height: 500,
+  width: 320,
+  overflow: 'hidden',
+  background: 'var(--color-primary)',
+})
+
+export const ItemTitle = styled(motion.div, {
+  position: 'absolute',
+  zIndex: 2,
+  top: '100%',
+  marginTop: 'var(--spacing-1)',
+  left: 56,
+})
+
+export const ItemSubtitle = styled(ItemTitle, {
+  marginTop: 'var(--spacing-7)',
+  left: 96,
+  width: '100%',
+})
+
+export const ItemParallax = styled(motion.div, {
+  position: 'relative',
+  transform: 'rotate(270deg)',
+  right: -145,
+  bottom: -258,
+  zIndex: 3,
+  '> div': {
+    width: 424,
   },
 })
