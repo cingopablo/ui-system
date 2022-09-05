@@ -80,6 +80,10 @@ export const Text = styled('span', {
         color: 'var(--color-danger)',
         WebkitTextStrokeColor: 'var(--color-danger)',
       },
+      white: {
+        color: 'hsl(var(--palette-gray-20))',
+        WebkitTextStrokeColor: 'hsl(var(--palette-gray-20))',
+      },
     },
     weight: {
       1: {

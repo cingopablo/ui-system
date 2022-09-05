@@ -35,7 +35,7 @@ export const _ItemCard = () => (
       }
       title={'airfocus'}
       description={'Strategic Product Management'}
-      attributes={['React', 'Design system', 'Storybook']}
+      keywords={['React', 'Design system', 'Storybook']}
     />
   </Grid>
 )

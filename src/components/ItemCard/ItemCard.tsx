@@ -76,7 +76,7 @@ export const ItemCard: React.FC<ItemCardProps> = ({
   image,
   description,
   onClick,
-  attributes,
+  keywords,
   css,
 }) => {
   return (
@@ -88,26 +88,19 @@ export const ItemCard: React.FC<ItemCardProps> = ({
         <ItemImageBack variants={backVariants} />
 
         <ItemTitle variants={titleVariants}>
-          <Text
-            size={'large'}
-            weight={4}
-            css={{ margin: 0 }}
-            style={{ color: 'var(--color, hsl(var(--palette-gray-20)))' }}>
+          <Text size={'large'} weight={4} css={{ margin: 0 }} style={{ color: 'hsl(var(--palette-gray-20))' }}>
             {title}
           </Text>
         </ItemTitle>
         <ItemSubtitle variants={subtitleVariants}>
-          <Text
-            weight={2}
-            css={{ margin: 0, lineHeight: 1 }}
-            style={{ color: 'var(--color, hsl(var(--palette-gray-20)))' }}>
+          <Text weight={2} css={{ margin: 0, lineHeight: 1 }} style={{ color: 'hsl(var(--palette-gray-20))' }}>
             {description}
           </Text>
         </ItemSubtitle>
         <ItemParallax variants={subtitleVariants}>
           <ParallaxText baseVelocity={5}>
-            <Text size={'xxlarge'} outline variant={'tertiary'}>
-              {attributes.join('. ')}
+            <Text size={'xxlarge'} outline variant={'white'}>
+              {keywords.join('. ')}
             </Text>
           </ParallaxText>
         </ItemParallax>
