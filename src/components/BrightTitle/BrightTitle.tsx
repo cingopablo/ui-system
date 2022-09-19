@@ -14,7 +14,6 @@ export const BrightTitle: React.FC<BrightTitleProps> = ({
 }) => {
   return (
     <Text
-      as={as}
       role={'heading'}
       css={{
         ...headingCSS[as],
