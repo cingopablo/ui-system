@@ -30,8 +30,8 @@ const weights = {
 }
 
 const height = {
-  '--font-height-text': '1.8',
-  '--font-height-heading': '1.3',
+  '--font-height-text': '1.5',
+  '--font-height-heading': '1.2',
 }
 
 const tracking = {
