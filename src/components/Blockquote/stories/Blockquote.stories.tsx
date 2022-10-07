@@ -22,6 +22,7 @@ export const _Blockquote = () => (
   <Grid gap={4}>
     <Blockquote>content</Blockquote>
     <Blockquote variant={'secondary'}>content</Blockquote>
+    <Blockquote variant={'tertiary'}>content</Blockquote>
     <Blockquote variant={'info'}>content</Blockquote>
     <Blockquote variant={'success'}>content</Blockquote>
     <Blockquote variant={'warning'}>content</Blockquote>

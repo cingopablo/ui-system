@@ -11,10 +11,13 @@ export const BlockquoteWrapper = styled('blockquote', {
   variants: {
     variant: {
       primary: {
-        backgroundColor: 'var(--color-primary-clear)',
+        backgroundColor: 'var(--color-primary)',
       },
       secondary: {
-        backgroundColor: 'var(--color-background-overlay)',
+        backgroundColor: 'var(--color-primary-emphasis)',
+      },
+      tertiary: {
+        backgroundColor: 'var(--color-primary-clear)',
       },
       info: {
         backgroundColor: 'var(--color-info-clear)',
