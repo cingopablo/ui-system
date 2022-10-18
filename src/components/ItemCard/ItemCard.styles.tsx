@@ -13,7 +13,7 @@ export const ItemImage = styled(motion.div, {
   position: 'absolute',
   zIndex: 1,
   top: 'calc(100vh * -0.05)',
-  right: 'calc(100vw * 0.1)',
+  right: 0,
   overflow: 'hidden',
   height: 500,
   width: 320,
