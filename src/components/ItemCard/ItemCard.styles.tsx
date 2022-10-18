@@ -13,7 +13,7 @@ export const ItemImage = styled(motion.div, {
   position: 'absolute',
   zIndex: 1,
   top: 'calc(100vh * -0.05)',
-  right: 'calc(100vw * 0.5)',
+  right: 'calc(100vw * 0.1)',
   overflow: 'hidden',
   height: 300,
   width: 220,
@@ -22,4 +22,8 @@ export const ItemImage = styled(motion.div, {
 export const ItemText = styled(Grid, {
   position: 'relative',
   zIndex: 2,
+
+  '*': {
+    margin: '0 !important',
+  },
 })

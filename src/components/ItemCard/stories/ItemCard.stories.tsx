@@ -19,7 +19,7 @@ export default {
 } as Meta
 
 export const _ItemCard = () => (
-  <Grid gap={4}>
+  <Grid>
     <ItemCard
       onClick={() => {
         // eslint-disable-next-line no-console

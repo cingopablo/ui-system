@@ -35,7 +35,7 @@ export const ItemCard: React.FC<ItemCardProps> = ({
       <ItemCardWrapper initial={'initial'} animate={'initial'} whileHover={'hover'} onClick={onClick} css={css}>
         <ItemImage variants={imageVariants}>{image}</ItemImage>
 
-        <ItemText>
+        <ItemText gap={4}>
           <H4>{title}</H4>
           <Text size={'medium'} weight={2}>
             {description}
