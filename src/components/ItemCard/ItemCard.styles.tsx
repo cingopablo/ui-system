@@ -10,9 +10,6 @@ export const ItemCardWrapper = styled(motion.div, {
 })
 
 export const ItemText = styled(Grid, {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
   '*': {
     margin: '0 !important',
   },
