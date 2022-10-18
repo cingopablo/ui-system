@@ -15,8 +15,8 @@ export const ItemImage = styled(motion.div, {
   top: 'calc(100vh * -0.05)',
   right: 'calc(100vw * 0.1)',
   overflow: 'hidden',
-  height: 300,
-  width: 220,
+  height: 500,
+  width: 320,
 })
 
 export const ItemText = styled(Grid, {
