@@ -9,20 +9,10 @@ export const ItemCardWrapper = styled(motion.div, {
   width: '100%',
 })
 
-export const ItemImage = styled(motion.div, {
-  position: 'absolute',
-  zIndex: 1,
-  top: 'calc(100vh * -0.05)',
-  right: 0,
-  overflow: 'hidden',
-  height: 500,
-  width: 320,
-})
-
 export const ItemText = styled(Grid, {
-  position: 'relative',
-  zIndex: 2,
-
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
   '*': {
     margin: '0 !important',
   },
