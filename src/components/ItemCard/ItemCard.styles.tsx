@@ -1,57 +1,25 @@
 import { motion } from 'framer-motion'
 
 import { styled } from '../../theming/stitches.config'
+import { Grid } from '../Grid/Grid'
 
 export const ItemCardWrapper = styled(motion.div, {
+  padding: 'var(--spacing-4) 0',
   position: 'relative',
-  height: 500,
-  width: 320,
+  width: '100%',
 })
 
 export const ItemImage = styled(motion.div, {
   position: 'absolute',
-  zIndex: 2,
-  inset: 0,
-  overflow: 'hidden',
-})
-
-export const ItemImageInner = styled(motion.div, {
-  height: 500,
-  width: 320,
-  position: 'relative',
-  inset: 0,
-})
-
-export const ItemImageBack = styled(motion.div, {
-  position: 'absolute',
   zIndex: 1,
-  height: 500,
-  width: 320,
+  top: 'calc(100vh * -0.05)',
+  right: 'calc(100vw * 0.5)',
   overflow: 'hidden',
-  background: 'var(--color-primary)',
+  height: 300,
+  width: 220,
 })
 
-export const ItemTitle = styled(motion.div, {
-  position: 'absolute',
-  zIndex: 2,
-  top: '100%',
-  marginTop: 'var(--spacing-1)',
-  left: 56,
-})
-
-export const ItemSubtitle = styled(ItemTitle, {
-  marginTop: 'var(--spacing-7)',
-  left: 96,
-  width: '100%',
-})
-
-export const ItemParallax = styled(motion.div, {
+export const ItemText = styled(Grid, {
   position: 'relative',
-  transform: 'rotate(270deg)',
-  right: -145,
-  bottom: -258,
-  zIndex: 3,
-  '> div': {
-    width: 424,
-  },
+  zIndex: 2,
 })
