@@ -50,6 +50,7 @@ export const typography = {
 export const text = {
   h1: {
     fontSize: '130px !important',
+    fontWeight: 'var(--font-weight-4)',
     marginBottom: '0 !important',
     lineHeight: '1 !important',
 
