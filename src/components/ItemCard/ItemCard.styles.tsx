@@ -9,6 +9,19 @@ export const ItemCardWrapper = styled(motion.div, {
   width: '100%',
 })
 
+export const TitleWrapper = styled(motion.span, {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-start',
+  gap: 'var(--spacing-4)',
+})
+
+export const IconWrapper = styled(motion.span, {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-start',
+})
+
 export const ItemText = styled(Grid, {
   '*': {
     margin: '0 !important',

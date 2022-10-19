@@ -35,7 +35,6 @@ export const _ItemCard = () => (
       }
       title={'airfocus design system'}
       description={'Strategic Product Management'}
-      keywords={['React', 'Design system', 'Storybook']}
     />
     <ItemCard
       onClick={() => {
@@ -52,7 +51,6 @@ export const _ItemCard = () => (
       }
       title={'airfocus'}
       description={'Strategic Product Management'}
-      keywords={['React', 'Design system', 'Storybook']}
     />
   </Grid>
 )
