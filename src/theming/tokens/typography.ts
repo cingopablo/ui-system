@@ -49,43 +49,43 @@ export const typography = {
 
 export const text = {
   h1: {
+    fontSize: '130px !important',
+    marginBottom: '0 !important',
+    lineHeight: '1 !important',
+
+    '@media (max-width: 600px)': {
+      fontSize: 'var(--font-size-9) !important',
+      lineHeight: '1 !important',
+    },
+  },
+  h2: {
     fontSize: 'var(--font-size-9)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
 
-    '@media only screen and (max-device-width: 600px)': {
+    '@media (max-width: 600px)': {
       fontSize: 'var(--font-size-6)',
     },
   },
-  h2: {
+  h3: {
     fontSize: 'var(--font-size-8)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
 
-    '@media only screen and (max-device-width: 600px)': {
+    '@media (max-width: 600px)': {
       fontSize: 'var(--font-size-5)',
     },
   },
-  h3: {
+  h4: {
     fontSize: 'var(--font-size-7)',
     fontWeight: 'var(--font-weight-4)',
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
 
-    '@media only screen and (max-device-width: 600px)': {
+    '@media (max-width: 600px)': {
       fontSize: 'var(--font-size-4)',
-    },
-  },
-  h4: {
-    fontSize: 'var(--font-size-6)',
-    fontWeight: 'var(--font-weight-4)',
-    lineHeight: 'var(--font-height-heading)',
-    marginBottom: '1.45rem',
-
-    '@media only screen and (max-device-width: 600px)': {
-      fontSize: 'var(--font-size-3)',
     },
   },
   xxxlarge: {
