@@ -32,6 +32,20 @@ export const CardWrapper = styled('div', {
         background: 'var(--color-danger-clear)',
       },
     },
+    align: {
+      left: {
+        textAlign: 'left',
+      },
+      center: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
+      },
+      right: {
+        textAlign: 'right',
+      },
+    },
     hover: {
       true: {
         cursor: 'pointer',
@@ -49,6 +63,7 @@ export const CardWrapper = styled('div', {
 
   defaultVariants: {
     variant: 'default',
+    align: 'left',
     hover: false,
     shadow: false,
   },
