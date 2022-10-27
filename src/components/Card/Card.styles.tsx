@@ -37,9 +37,9 @@ export const CardWrapper = styled('div', {
         textAlign: 'left',
       },
       center: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        display: 'grid',
+        alignContent: 'center',
+        justifyItems: 'center',
         textAlign: 'center',
       },
       right: {
