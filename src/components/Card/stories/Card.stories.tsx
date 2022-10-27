@@ -2,11 +2,11 @@ import { Meta } from '@storybook/react'
 import * as React from 'react'
 
 import { Grid } from '../../Grid/Grid'
-import { InfoCard } from '../InfoCard'
+import { Card } from '../Card'
 
 export default {
-  title: 'UI System/Info Card',
-  component: InfoCard,
+  title: 'UI System/Card',
+  component: Card,
   parameters: {
     backgrounds: {
       default: 'light',
@@ -18,25 +18,23 @@ export default {
   },
 } as Meta
 
-export const _InfoCard = () => (
+export const _Card = () => (
   <Grid gap={4}>
     {/* eslint-disable-next-line no-console */}
-    <InfoCard onClick={() => console.log('click')}>This is a test</InfoCard>
+    <Card>This is a test</Card>
     {/* eslint-disable-next-line no-console */}
-    <InfoCard variant={'info'} onClick={() => console.log('click')}>
-      This is a test
-    </InfoCard>
+    <Card variant={'info'}>This is a test</Card>
     {/* eslint-disable-next-line no-console */}
-    <InfoCard variant={'success'} onClick={() => console.log('click')}>
+    <Card variant={'success'} onClick={() => console.log('click')}>
       This is a test
-    </InfoCard>
+    </Card>
     {/* eslint-disable-next-line no-console */}
-    <InfoCard variant={'warning'} onClick={() => console.log('click')}>
+    <Card variant={'warning'} onClick={() => console.log('click')}>
       This is a test
-    </InfoCard>
+    </Card>
     {/* eslint-disable-next-line no-console */}
-    <InfoCard variant={'danger'} onClick={() => console.log('click')}>
+    <Card variant={'danger'} onClick={() => console.log('click')}>
       This is a test
-    </InfoCard>
+    </Card>
   </Grid>
 )

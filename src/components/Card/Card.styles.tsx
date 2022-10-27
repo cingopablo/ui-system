@@ -1,11 +1,14 @@
 import { shadows, styled } from '../../theming/stitches.config'
 
-export const InfoCardWrapper = styled('div', {
-  padding: 'var(--spacing-5)',
+export const CardWrapper = styled('div', {
+  padding: 'var(--spacing-6)',
   borderRadius: 'var(--border-radius-3)',
   color: 'var(--color-text-primary)',
   transition: 'box-shadow 250ms',
-  boxShadow: shadows.small,
+
+  '@media (max-width: 600px)': {
+    padding: 'var(--spacing-5)',
+  },
 
   variants: {
     variant: {
@@ -37,10 +40,16 @@ export const InfoCardWrapper = styled('div', {
         },
       },
     },
+    shadow: {
+      true: {
+        boxShadow: shadows.small,
+      },
+    },
   },
 
   defaultVariants: {
     variant: 'default',
     hover: false,
+    shadow: false,
   },
 })
