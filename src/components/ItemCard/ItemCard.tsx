@@ -1,11 +1,8 @@
 import React from 'react'
 
 import { Cursor } from '../Cursor/Cursor'
-import { Icon } from '../Icon/Icon'
-import { H1, H2, H3, H4, Text } from '../Typography'
 import { DescriptionWrapper, ImageWrapper, ItemCardWrapper, TitleWrapper } from './ItemCard.styles'
 import { ItemCardProps } from './ItemCard.types'
-import { Flex } from '../Flex/Flex'
 
 const titleVariants = {
   initial: {

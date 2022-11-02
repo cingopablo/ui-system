@@ -1,15 +1,12 @@
 import { motion } from 'framer-motion'
 
 import { styled } from '../../theming/stitches.config'
-import { Grid } from '../Grid/Grid'
-import { Flex } from '../Flex/Flex'
 import { H3, Text } from '../Typography'
 
 const TitleMotion = motion(H3)
 const DescriptionMotion = motion(Text)
 
 export const ItemCardWrapper = styled(motion.div, {
-  border: '1px solid greenyellow',
   padding: 'var(--spacing-7)',
   position: 'relative',
   width: '100%',
@@ -19,6 +16,7 @@ export const ItemCardWrapper = styled(motion.div, {
 
   '@media (max-width: 600px)': {
     display: 'grid',
+    pointerEvents: 'none',
   },
 })
 
