@@ -16,7 +16,6 @@ export const ItemCardWrapper = styled(motion.div, {
 
   '@media (max-width: 600px)': {
     display: 'grid',
-    pointerEvents: 'none',
   },
 })
 
