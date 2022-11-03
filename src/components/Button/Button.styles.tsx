@@ -5,6 +5,7 @@ export const StyledButton = styled('button', {
   all: 'unset',
   cursor: 'pointer',
   width: 'max-content',
+  fontWeight: 'var(--font-weight-3) !important',
   padding: '0 var(--spacing-4)',
   borderRadius: 'var(--border-radius-2)',
   transform: 'scale(var(--button-scale, 1)) translateZ(0)',
