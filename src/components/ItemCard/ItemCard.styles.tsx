@@ -7,7 +7,7 @@ const TitleMotion = motion(H3)
 const DescriptionMotion = motion(Text)
 
 export const ItemCardWrapper = styled(motion.div, {
-  padding: 'var(--spacing-7)',
+  padding: 'var(--spacing-7) 0',
   position: 'relative',
   width: '100%',
   display: 'flex',
