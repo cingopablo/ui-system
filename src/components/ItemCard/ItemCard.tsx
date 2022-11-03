@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Cursor } from '../Cursor/Cursor'
-import { DescriptionWrapper, ImageWrapper, ItemCardWrapper, TextWrapper, TitleWrapper } from './ItemCard.styles'
+import { DescriptionWrapper, ImageWrapper, ItemCardWrapper, TitleWrapper } from './ItemCard.styles'
 import { ItemCardProps } from './ItemCard.types'
 
 const titleVariants = {
@@ -31,12 +31,10 @@ export const ItemCard = ({ title, variant = 'primary', image, description, onCli
     <Cursor content={image} variant={variant}>
       <ItemCardWrapper initial={'initial'} animate={'initial'} whileHover={'hover'} onClick={onClick} css={css}>
         <ImageWrapper>{image}</ImageWrapper>
-        <TextWrapper>
-          <TitleWrapper variants={titleVariants}>{title}</TitleWrapper>
-          <DescriptionWrapper size={'medium'} weight={2} variants={descriptionVariants}>
-            {description}
-          </DescriptionWrapper>
-        </TextWrapper>
+        <TitleWrapper variants={titleVariants}>{title}</TitleWrapper>
+        <DescriptionWrapper size={'medium'} weight={2} variants={descriptionVariants}>
+          {description}
+        </DescriptionWrapper>
       </ItemCardWrapper>
     </Cursor>
   )
