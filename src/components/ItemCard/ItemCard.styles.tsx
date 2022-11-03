@@ -9,6 +9,14 @@ const DescriptionMotion = motion(Text)
 export const ItemCardWrapper = styled(motion.div, {
   padding: 'var(--spacing-7) 0',
   position: 'relative',
+
+  '@sm': {
+    display: 'grid',
+    gap: 'var(--spacing-4)',
+  },
+})
+
+export const TextWrapper = styled('div', {
   width: '100%',
   display: 'flex',
   alignItems: 'center',

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Cursor } from '../Cursor/Cursor'
-import { DescriptionWrapper, ImageWrapper, ItemCardWrapper, TitleWrapper } from './ItemCard.styles'
+import { DescriptionWrapper, ImageWrapper, ItemCardWrapper, TextWrapper, TitleWrapper } from './ItemCard.styles'
 import { ItemCardProps } from './ItemCard.types'
 
 const titleVariants = {
@@ -26,20 +26,17 @@ const descriptionVariants = {
   },
 }
 
-export const ItemCard = ({ title, variant = 'primary', image, description, compact, onClick, css }: ItemCardProps) => {
+export const ItemCard = ({ title, variant = 'primary', image, description, onClick, css }: ItemCardProps) => {
   return (
-    <Cursor content={compact ? 'See more' : image} variant={variant}>
-      <ItemCardWrapper
-        initial={'initial'}
-        animate={'initial'}
-        whileHover={compact ? undefined : 'hover'}
-        onClick={onClick}
-        css={css}>
+    <Cursor content={image} variant={variant}>
+      <ItemCardWrapper initial={'initial'} animate={'initial'} whileHover={'hover'} onClick={onClick} css={css}>
         <ImageWrapper>{image}</ImageWrapper>
-        <TitleWrapper variants={titleVariants}>{title}</TitleWrapper>
-        <DescriptionWrapper size={'medium'} weight={2} variants={descriptionVariants}>
-          {description}
-        </DescriptionWrapper>
+        <TextWrapper>
+          <TitleWrapper variants={titleVariants}>{title}</TitleWrapper>
+          <DescriptionWrapper size={'medium'} weight={2} variants={descriptionVariants}>
+            {description}
+          </DescriptionWrapper>
+        </TextWrapper>
       </ItemCardWrapper>
     </Cursor>
   )
