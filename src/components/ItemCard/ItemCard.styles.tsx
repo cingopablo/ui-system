@@ -16,6 +16,7 @@ export const ItemCardWrapper = styled(motion.div, {
 
   '@sm': {
     display: 'grid',
+    justifyContent: 'stretch',
   },
 })
 
