@@ -4,9 +4,6 @@ import { text } from '../../theming/tokens'
 export const StyledButton = styled('button', {
   all: 'unset',
   cursor: 'pointer',
-  fontSize: text.button.fontSize,
-  fontWeight: text.button.fontWeight,
-  height: '40px',
   width: 'max-content',
   padding: '0 var(--spacing-4)',
   borderRadius: 'var(--border-radius-2)',
@@ -67,6 +64,23 @@ export const StyledButton = styled('button', {
         },
       },
     },
+    size: {
+      small: {
+        height: '32px',
+        fontSize: text.default.fontSize,
+        fontWeight: text.default.fontWeight,
+      },
+      default: {
+        height: '40px',
+        fontSize: text.button.fontSize,
+        fontWeight: text.button.fontWeight,
+      },
+      large: {
+        height: '60px',
+        fontSize: text.medium.fontSize,
+        fontWeight: text.medium.fontWeight,
+      },
+    },
     destructive: {
       true: {
         color: 'var(--color, hsl(var(--palette-gray-20)))',
@@ -124,6 +138,7 @@ export const StyledButton = styled('button', {
   ],
   defaultVariants: {
     variant: 'primary',
+    size: 'small',
     destructive: false,
     onlyIcon: false,
   },

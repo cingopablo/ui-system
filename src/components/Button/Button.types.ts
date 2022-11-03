@@ -2,6 +2,7 @@ import { ForwardRefComponent } from 'framer-motion'
 import * as React from 'react'
 
 export type ButtonVariant = 'primary' | 'secondary'
+export type ButtonSize = 'small' | 'default' | 'large'
 
 interface BaseButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   as?: ForwardRefComponent<HTMLButtonElement, any>
@@ -13,6 +14,7 @@ interface MainButtonProps extends BaseButtonProps {
   disabled?: boolean
   destructive?: boolean
   variant?: ButtonVariant
+  size?: ButtonSize
   icon?: never
   startIcon?: React.ReactNode
   endIcon?: React.ReactNode
@@ -24,6 +26,7 @@ interface IconButtonProps extends BaseButtonProps {
   disabled?: boolean
   destructive?: boolean
   variant?: ButtonVariant
+  size?: ButtonSize
   icon: React.ReactNode
   startIcon?: never
   endIcon?: never

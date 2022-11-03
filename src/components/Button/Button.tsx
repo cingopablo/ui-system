@@ -6,11 +6,20 @@ import { ButtonProps } from './Button.types'
 
 export const Button = React.forwardRef(
   <T extends object>(props: ButtonProps<T>, ref: React.ForwardedRef<HTMLButtonElement>) => {
-    const { variant = 'primary', onlyIcon = false, children, icon, startIcon, endIcon, ...rest } = props
+    const {
+      variant = 'primary',
+      size = 'default',
+      onlyIcon = false,
+      children,
+      icon,
+      startIcon,
+      endIcon,
+      ...rest
+    } = props
 
     if (onlyIcon) {
       return (
-        <StyledButton variant={variant} onlyIcon ref={ref} {...rest}>
+        <StyledButton variant={variant} size={size} onlyIcon ref={ref} {...rest}>
           <Flex
             css={{
               zIndex: 1,
@@ -22,7 +31,7 @@ export const Button = React.forwardRef(
     }
 
     return (
-      <StyledButton variant={variant} ref={ref} {...rest}>
+      <StyledButton variant={variant} size={size} ref={ref} {...rest}>
         {startIcon ? (
           <Flex
             css={{
