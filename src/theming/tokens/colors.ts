@@ -4,6 +4,7 @@ export const colors = {
   '--palette-gray-00': 'var(--base-gray) 100%',
   '--palette-gray-20': 'var(--base-gray) 98%',
   '--palette-gray-50': 'var(--base-gray) 95%',
+  '--palette-gray-100': 'var(--base-gray) 90%',
   '--palette-gray-200': 'var(--base-gray) 80%',
   '--palette-gray-300': 'var(--base-gray) 70%',
   '--palette-gray-400': 'var(--base-gray) 60%',
