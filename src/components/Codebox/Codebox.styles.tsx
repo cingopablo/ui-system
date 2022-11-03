@@ -1,7 +1,7 @@
 import { styled } from '../../theming/stitches.config'
 
 export const CodeboxWrapper = styled('div', {
-  '@media (max-width: 600px)': {
+  '@sm': {
     display: 'block',
     overflow: 'hidden',
   },

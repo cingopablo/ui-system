@@ -6,7 +6,7 @@ export const CardWrapper = styled('div', {
   color: 'var(--color-text-primary)',
   transition: 'box-shadow 250ms',
 
-  '@media (max-width: 600px)': {
+  '@sm': {
     padding: 'var(--spacing-5)',
   },
 

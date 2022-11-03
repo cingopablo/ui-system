@@ -21,7 +21,7 @@ export const CursorElement = styled(motion.div, {
   textAlign: 'center',
   whiteSpace: 'nowrap',
 
-  '@media (max-width: 600px)': {
+  '@sm': {
     visibility: 'hidden',
   },
 

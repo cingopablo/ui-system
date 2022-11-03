@@ -21,6 +21,7 @@ export default {
 export const _ItemCard = () => (
   <Grid>
     <ItemCard
+      compact
       onClick={() => {
         // eslint-disable-next-line no-console
         console.log('click')

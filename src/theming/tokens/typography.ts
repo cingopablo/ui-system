@@ -54,7 +54,7 @@ export const text = {
     marginBottom: '0 !important',
     lineHeight: '1 !important',
 
-    '@media (max-width: 600px)': {
+    '@sm': {
       fontSize: 'var(--font-size-9) !important',
       lineHeight: '1 !important',
     },
@@ -65,7 +65,7 @@ export const text = {
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
 
-    '@media (max-width: 600px)': {
+    '@sm': {
       fontSize: 'var(--font-size-6)',
     },
   },
@@ -75,7 +75,7 @@ export const text = {
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
 
-    '@media (max-width: 600px)': {
+    '@sm': {
       fontSize: 'var(--font-size-5)',
     },
   },
@@ -85,7 +85,7 @@ export const text = {
     lineHeight: 'var(--font-height-heading)',
     marginBottom: '1.45rem',
 
-    '@media (max-width: 600px)': {
+    '@sm': {
       fontSize: 'var(--font-size-4)',
     },
   },

@@ -14,14 +14,14 @@ export const ItemCardWrapper = styled(motion.div, {
   alignItems: 'center',
   justifyContent: 'space-between',
 
-  '@media (max-width: 600px)': {
+  '@sm': {
     display: 'grid',
   },
 })
 
 export const ImageWrapper = styled('div', {
   display: 'none',
-  '@media (max-width: 600px)': {
+  '@sm': {
     display: 'block',
   },
 })
