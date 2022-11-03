@@ -26,9 +26,9 @@ const descriptionVariants = {
   },
 }
 
-export const ItemCard = ({ title, variant = 'primary', image, description, onClick, css }: ItemCardProps) => {
+export const ItemCard = ({ title, variant = 'primary', image, preview, description, onClick, css }: ItemCardProps) => {
   return (
-    <Cursor content={image} variant={variant}>
+    <Cursor content={preview} variant={variant}>
       <ItemCardWrapper initial={'initial'} animate={'initial'} whileHover={'hover'} onClick={onClick} css={css}>
         <ImageWrapper>{image}</ImageWrapper>
         <TitleWrapper variants={titleVariants}>{title}</TitleWrapper>
