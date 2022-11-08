@@ -48,7 +48,6 @@ export const TextImage = styled(PositionMotion, {
 export const TrackImageElement = styled('img', {
   width: 'fit-content',
   height: 'fit-content',
-  filter: 'grayscale(100%)',
 })
 
 export const TrackImageParallax = styled('div', {
