@@ -2,7 +2,7 @@ import { CSS } from '../../theming/stitches.config'
 
 export interface ItemCardProps {
   src: string
-  srcMobile: string
+  imageMobile: React.ReactNode
   onClick?: () => void
   title: string
   position: string
