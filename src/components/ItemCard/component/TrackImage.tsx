@@ -11,7 +11,7 @@ import {
 } from './TrackImage.styles'
 import { TrackImageProps } from './TrackImage.types'
 
-const viewSite = 'VIEW SITE'
+const viewSite = 'VIEW SITE VIEW SITE VIEW SITE'
 
 export const TrackImage = ({ children, src, position }: TrackImageProps) => {
   const [x, setX] = React.useState(0)
