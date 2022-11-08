@@ -1,14 +1,9 @@
-import React from 'react'
-
 import { CSS } from '../../theming/stitches.config'
 
 export interface ItemCardProps {
-  image: React.ReactNode
-  preview: React.ReactNode
+  src: string
   onClick?: () => void
-  title?: string
-  description?: string
-  cursor?: string
-  variant?: 'blur' | 'primary' | 'secondary'
+  title: string
+  position: string
   css?: CSS
 }

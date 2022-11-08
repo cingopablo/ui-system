@@ -1,41 +1,30 @@
 import React from 'react'
 
-import { Cursor } from '../Cursor/Cursor'
-import { DescriptionWrapper, ImageWrapper, ItemCardWrapper, TitleWrapper } from './ItemCard.styles'
+import { TrackImage } from './component/TrackImage'
+import { ImageWrapper, ItemCardWrapper, PositionWrapper, TitleWrapper } from './ItemCard.styles'
 import { ItemCardProps } from './ItemCard.types'
 
 const titleVariants = {
   initial: {
     x: 0,
-    opacity: 1,
-  },
-  hover: {
-    x: -40,
-    opacity: 0.5,
-  },
-}
-
-const descriptionVariants = {
-  initial: {
-    x: 0,
-    opacity: 1,
   },
   hover: {
     x: 40,
-    opacity: 0.5,
   },
 }
 
-export const ItemCard = ({ title, variant = 'primary', image, preview, description, onClick, css }: ItemCardProps) => {
+export const ItemCard = ({ title, src, position, onClick, css }: ItemCardProps) => {
   return (
-    <Cursor content={preview} variant={variant}>
+    <TrackImage src={src} position={position}>
       <ItemCardWrapper initial={'initial'} animate={'initial'} whileHover={'hover'} onClick={onClick} css={css}>
-        <ImageWrapper>{image}</ImageWrapper>
+        <ImageWrapper>
+          <img alt={title} src={src} />
+        </ImageWrapper>
         <TitleWrapper variants={titleVariants}>{title}</TitleWrapper>
-        <DescriptionWrapper size={'medium'} weight={2} variants={descriptionVariants}>
-          {description}
-        </DescriptionWrapper>
+        <PositionWrapper size={'medium'} weight={2}>
+          {position}
+        </PositionWrapper>
       </ItemCardWrapper>
-    </Cursor>
+    </TrackImage>
   )
 }

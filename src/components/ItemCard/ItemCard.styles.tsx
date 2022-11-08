@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion'
 
 import { styled } from '../../theming/stitches.config'
-import { H3, Text } from '../Typography'
+import { H2, Text } from '../Typography'
 
-const TitleMotion = motion(H3)
-const DescriptionMotion = motion(Text)
+const TitleMotion = motion(H2)
 
 export const ItemCardWrapper = styled(motion.div, {
   padding: 'var(--spacing-7) 0',
@@ -30,9 +29,14 @@ export const ImageWrapper = styled('div', {
 
 export const TitleWrapper = styled(TitleMotion, {
   margin: '0 !important',
+  textTransform: 'uppercase',
 })
 
-export const DescriptionWrapper = styled(DescriptionMotion, {
+export const PositionWrapper = styled(Text, {
+  display: 'none',
   lineHeight: 'var(--font-height-heading)',
   margin: '0 !important',
+  '@md': {
+    display: 'block',
+  },
 })
