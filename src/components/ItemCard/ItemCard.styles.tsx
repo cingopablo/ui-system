@@ -29,7 +29,6 @@ export const ImageWrapper = styled('div', {
 
 export const TitleWrapper = styled(TitleMotion, {
   margin: '0 !important',
-  textTransform: 'uppercase',
 })
 
 export const PositionWrapper = styled(Text, {
