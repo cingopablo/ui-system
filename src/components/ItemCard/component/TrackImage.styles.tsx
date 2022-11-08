@@ -48,7 +48,7 @@ export const TextImage = styled(PositionMotion, {
 export const TrackImageElement = styled('img', {
   width: 320,
   height: 400,
-  filter: 'brightness(0.8)',
+  filter: 'grayscale(100%)',
 })
 
 export const TrackImageParallax = styled('div', {

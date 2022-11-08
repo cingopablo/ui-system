@@ -65,12 +65,12 @@ export const TrackImage = ({ children, src, position }: TrackImageProps) => {
         <TrackImageElement src={src} />
         <TrackImageParallax>
           <ParallaxText baseVelocity={-7}>
-            <Text size={'xlarge'} weight={4} outline variant={'tertiary'}>
+            <Text size={'xlarge'} weight={4} outline variant={'color'}>
               {viewSite}
             </Text>
           </ParallaxText>
           <ParallaxText baseVelocity={7}>
-            <Text size={'xlarge'} weight={4} outline variant={'tertiary'}>
+            <Text size={'xlarge'} weight={4} outline variant={'color'}>
               {viewSite}
             </Text>
           </ParallaxText>

@@ -32,16 +32,16 @@ export const _ItemCard = () => (
       title={'airfocus design system'}
       position={'Design & Development'}
     />
-    <ItemCard
-      onClick={() => {
-        // eslint-disable-next-line no-console
-        console.log('click')
-      }}
-      src={
-        'https://images.unsplash.com/photo-1661501560798-562d7223dbbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
-      }
-      title={'airfocus'}
-      position={'Development'}
-    />
+    {/*<ItemCard*/}
+    {/*  onClick={() => {*/}
+    {/*    // eslint-disable-next-line no-console*/}
+    {/*    console.log('click')*/}
+    {/*  }}*/}
+    {/*  src={*/}
+    {/*    'https://images.unsplash.com/photo-1661501560798-562d7223dbbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'*/}
+    {/*  }*/}
+    {/*  title={'airfocus'}*/}
+    {/*  position={'Development'}*/}
+    {/*/>*/}
   </Grid>
 )
