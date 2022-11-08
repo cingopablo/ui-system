@@ -11,9 +11,9 @@ import {
 } from './TrackImage.styles'
 import { TrackImageProps } from './TrackImage.types'
 
-const viewSite = 'VIEW SITE VIEW SITE VIEW SITE'
+const viewSite = 'VIEW SITE - VIEW SITE - VIEW SITE -'
 
-export const TrackImage = ({ children, src, position }: TrackImageProps) => {
+export const TrackImage = ({ children, src, position, variant = 'white' }: TrackImageProps) => {
   const [x, setX] = React.useState(0)
   const [animate, setAnimate] = React.useState('default')
 
@@ -62,18 +62,18 @@ export const TrackImage = ({ children, src, position }: TrackImageProps) => {
       whileHover={{ background: 'var(--color-background-overlay)' }}>
       {children}
       <TrackImageContainer animate={animate} variants={variants}>
-        <TextImage size={'xlarge'} weight={4} variant={'color'} variants={positionVariants}>
+        <TextImage size={'xlarge'} weight={4} variant={variant} variants={positionVariants}>
           {position}
         </TextImage>
         <TrackImageElement src={src} />
         <TrackImageParallax>
           <ParallaxText baseVelocity={-7}>
-            <Text size={'xlarge'} weight={4} outline variant={'color'}>
+            <Text size={'xlarge'} weight={4} outline variant={variant}>
               {viewSite}
             </Text>
           </ParallaxText>
           <ParallaxText baseVelocity={7}>
-            <Text size={'xlarge'} weight={4} outline variant={'color'}>
+            <Text size={'xlarge'} weight={4} outline variant={variant}>
               {viewSite}
             </Text>
           </ParallaxText>

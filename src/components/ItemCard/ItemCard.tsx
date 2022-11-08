@@ -13,12 +13,12 @@ const titleVariants = {
   },
 }
 
-export const ItemCard = ({ title, src, position, onClick, css }: ItemCardProps) => {
+export const ItemCard = ({ title, src, srcMobile, position, onClick, css, variant }: ItemCardProps) => {
   return (
-    <TrackImage src={src} position={position}>
+    <TrackImage src={src} position={position} variant={variant}>
       <ItemCardWrapper initial={'initial'} animate={'initial'} whileHover={'hover'} onClick={onClick} css={css}>
         <ImageWrapper>
-          <img alt={title} src={src} />
+          <img alt={title} src={srcMobile} />
         </ImageWrapper>
         <TitleWrapper variants={titleVariants}>{title}</TitleWrapper>
         <PositionWrapper size={'medium'} weight={2}>
