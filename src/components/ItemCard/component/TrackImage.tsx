@@ -30,8 +30,8 @@ export const TrackImage = ({ children, src, position }: TrackImageProps) => {
     default: {},
     enter: {
       opacity: 1,
-      rotateZ: -10 + x * 0.02,
-      x: -250 + x * 0.2,
+      rotateZ: -10 + x * 0.01,
+      x: -200 + x * 0.1,
     },
   }
 
@@ -56,7 +56,10 @@ export const TrackImage = ({ children, src, position }: TrackImageProps) => {
   }
 
   return (
-    <TrackImageWrapper onMouseEnter={onEnter} onMouseLeave={onLeave}>
+    <TrackImageWrapper
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}
+      whileHover={{ background: 'var(--color-background-overlay)' }}>
       {children}
       <TrackImageContainer animate={animate} variants={variants}>
         <TextImage size={'xlarge'} weight={4} variant={'color'} variants={positionVariants}>

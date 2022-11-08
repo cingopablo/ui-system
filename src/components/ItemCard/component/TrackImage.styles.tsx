@@ -5,7 +5,7 @@ import { Text } from '../../Typography'
 
 const PositionMotion = motion(Text)
 
-export const TrackImageWrapper = styled('div', {
+export const TrackImageWrapper = styled(motion.div, {
   cursor: 'pointer',
   position: 'relative',
 })
@@ -15,7 +15,7 @@ export const TrackImageContainer = styled(motion.div, {
   position: 'absolute',
   zIndex: 10,
   left: 'auto',
-  right: 100,
+  right: 150,
   top: -150,
   opacity: 0,
   width: 320,
