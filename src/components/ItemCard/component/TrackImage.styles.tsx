@@ -15,7 +15,7 @@ export const TrackImageContainer = styled(motion.div, {
   position: 'absolute',
   zIndex: 10,
   left: 'auto',
-  right: 200,
+  right: 100,
   top: -150,
   opacity: 0,
   width: 320,
@@ -46,8 +46,8 @@ export const TextImage = styled(PositionMotion, {
 })
 
 export const TrackImageElement = styled('img', {
-  width: 320,
-  height: 400,
+  width: 'fit-content',
+  height: 'fit-content',
   filter: 'grayscale(100%)',
 })
 
