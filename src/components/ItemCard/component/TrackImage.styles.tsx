@@ -15,7 +15,7 @@ export const TrackImageContainer = styled(motion.div, {
   position: 'absolute',
   zIndex: 10,
   left: 'auto',
-  right: 150,
+  right: 50,
   top: -150,
   opacity: 0,
   width: 320,
