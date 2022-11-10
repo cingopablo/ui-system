@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Anchor } from '../Anchor/Anchor'
 import { LogoProps, LogoSize } from './Logo.types'
 
 const width = (size?: LogoSize) => {
@@ -16,7 +15,7 @@ const width = (size?: LogoSize) => {
 }
 
 export const Logo = ({ size, color = 'var(--color-primary)' }: LogoProps) => (
-  <Anchor href={'/'} hover={false}>
+  <a href={'/'}>
     <svg width={width(size)} height={'100%'} viewBox={'0 0 805 302'} fill={'none'} xmlns={'http://www.w3.org/2000/svg'}>
       <path
         d={
@@ -89,7 +88,7 @@ export const Logo = ({ size, color = 'var(--color-primary)' }: LogoProps) => (
         fill={color}
       />
     </svg>
-  </Anchor>
+  </a>
 )
 
 Logo.displayName = 'Logo'
