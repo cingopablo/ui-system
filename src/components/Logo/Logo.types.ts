@@ -1,4 +1,6 @@
+export type LogoSize = 'small' | 'medium' | 'large' | 'xlarge' | number
+
 export interface LogoProps {
-  size?: 'small' | 'medium' | 'large' | 'xlarge'
-  variant?: 'primary' | 'secondary' | 'tertiary' | 'color' | 'info' | 'success' | 'warning' | 'danger' | 'white'
+  size?: LogoSize
+  color?: string
 }
