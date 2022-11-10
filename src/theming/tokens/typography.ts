@@ -51,12 +51,11 @@ export const text = {
   h1: {
     fontSize: '130px !important',
     fontWeight: 'var(--font-weight-4)',
-    marginBottom: '0 !important',
-    lineHeight: '1 !important',
+    lineHeight: 'var(--font-height-heading)',
+    marginBottom: '1.45rem',
 
     '@sm': {
       fontSize: 'var(--font-size-9) !important',
-      lineHeight: '1 !important',
     },
   },
   h2: {
