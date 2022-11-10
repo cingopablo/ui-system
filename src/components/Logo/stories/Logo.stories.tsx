@@ -24,6 +24,6 @@ export const _Logo = () => (
     <Logo size={'medium'} />
     <Logo size={'large'} />
     <Logo size={'xlarge'} />
-    <Logo />
+    <Logo size={100} height={60} />
   </Grid>
 )

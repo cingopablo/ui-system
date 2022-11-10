@@ -14,8 +14,8 @@ const width = (size?: LogoSize) => {
   return size === 'small' ? 120 : size === 'medium' ? 160 : size === 'large' ? 200 : 240
 }
 
-export const Logo = ({ size, color = 'var(--color-primary)' }: LogoProps) => (
-  <a href={'/'}>
+export const Logo = ({ size, color = 'var(--color-primary)', height }: LogoProps) => (
+  <a href={'/'} style={{ height: height ?? 'min-content' }}>
     <svg width={width(size)} height={'100%'} viewBox={'0 0 805 302'} fill={'none'} xmlns={'http://www.w3.org/2000/svg'}>
       <path
         d={
