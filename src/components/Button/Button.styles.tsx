@@ -50,18 +50,35 @@ export const StyledButton = styled('button', {
       secondary: {
         color: 'var(--color, var(--color-primary))',
         backgroundColor: 'var(--background, transparent)',
-        // boxShadow: `inset 0 0 0 2px var(--color-primary), ${shadows.medium}`,
+        boxShadow: `inset 0 0 0 2px var(--color-primary), ${shadows.medium}`,
 
         '&:hover': {
           '&:not(:disabled)': {
             '--color': 'var(--color-primary-emphasis)',
-            // boxShadow: `inset 0 0 0 2px var(--color), ${shadows.large}`,
+            boxShadow: `inset 0 0 0 2px var(--color), ${shadows.large}`,
           },
         },
 
         '&:focus-visible': {
           '--color': 'var(--color-primary-emphasis)',
-          // boxShadow: `inset 0 0 0 2px var(--color), ${shadows.large}`,
+          boxShadow: `inset 0 0 0 2px var(--color), ${shadows.large}`,
+        },
+      },
+      tertiary: {
+        color: 'var(--color, var(--color-primary))',
+        boxShadow: 'none',
+        padding: 0,
+
+        '&:hover': {
+          '&:not(:disabled)': {
+            '--color': 'var(--color-primary-emphasis)',
+            boxShadow: 'none',
+          },
+        },
+
+        '&:focus-visible': {
+          '--color': 'var(--color-primary-emphasis)',
+          boxShadow: 'none',
         },
       },
     },

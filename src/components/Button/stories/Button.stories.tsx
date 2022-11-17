@@ -27,6 +27,7 @@ export const _Variants = () => (
       <Flex gap={2}>
         <Button>Click me</Button>
         <Button variant={'secondary'}>Click me</Button>
+        <Button variant={'tertiary'}>Click me</Button>
         <Button destructive>Click me</Button>
         <Button variant={'secondary'} destructive>
           Click me
@@ -35,6 +36,7 @@ export const _Variants = () => (
         <Button endIcon={<Icon.CMD />}>CMD</Button>
         <Button onlyIcon icon={<Icon.CMD size={5} />} />
         <Button onlyIcon variant={'secondary'} icon={<Icon.CMD size={5} />} />
+        <Button onlyIcon variant={'tertiary'} icon={<Icon.CMD size={5} />} />
       </Flex>
     </Grid>
     <Grid gap={2}>

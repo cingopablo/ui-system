@@ -1,7 +1,7 @@
 import { ForwardRefComponent } from 'framer-motion'
 import * as React from 'react'
 
-export type ButtonVariant = 'primary' | 'secondary'
+export type ButtonVariant = 'primary' | 'secondary' | 'tertiary'
 export type ButtonSize = 'small' | 'default' | 'large'
 
 interface BaseButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
