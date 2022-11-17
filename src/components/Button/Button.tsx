@@ -9,6 +9,7 @@ export const Button = React.forwardRef(
     const {
       variant = 'primary',
       size = 'default',
+      color = 'primary',
       onlyIcon = false,
       children,
       icon,
@@ -19,7 +20,7 @@ export const Button = React.forwardRef(
 
     if (onlyIcon) {
       return (
-        <StyledButton variant={variant} size={size} onlyIcon ref={ref} {...rest}>
+        <StyledButton variant={variant} size={size} color={color} onlyIcon ref={ref} {...rest}>
           <Flex
             css={{
               zIndex: 1,
@@ -31,7 +32,7 @@ export const Button = React.forwardRef(
     }
 
     return (
-      <StyledButton variant={variant} size={size} ref={ref} {...rest}>
+      <StyledButton variant={variant} size={size} color={color} ref={ref} {...rest}>
         {startIcon ? (
           <Flex
             css={{

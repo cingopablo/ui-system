@@ -23,6 +23,7 @@ export const dark = {
     '--color-danger-emphasis': 'hsl(var(--palette-red-550))',
     '--color-danger-clear': 'hsl(var(--palette-red-700))',
     '--color-shadow': 'var(--palette-purple-300)',
+    '--color-shadow-neutral': 'var(--palette-gray-300)',
     '--color-shadow-info': 'var(--palette-blue-350)',
     '--color-shadow-success': 'var(--palette-green-350)',
     '--color-shadow-warning': 'var(--palette-orange-350)',

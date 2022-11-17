@@ -23,89 +23,113 @@ export default {
 export const _Variants = () => (
   <Grid gap={6}>
     <Grid gap={2}>
-      Default
+      Primary
       <Flex gap={2}>
-        <Button>Click me</Button>
-        <Button variant={'secondary'}>Click me</Button>
-        <Button variant={'tertiary'}>Click me</Button>
-        <Button destructive>Click me</Button>
-        <Button variant={'secondary'} destructive>
-          Click me
+        <Button>Active</Button>
+        <Button disabled>Disabled</Button>
+      </Flex>
+    </Grid>
+    <Grid gap={2}>
+      Secondary
+      <Flex gap={2}>
+        <Button variant={'secondary'}>Active</Button>
+        <Button variant={'secondary'} disabled>
+          Disabled
         </Button>
-        <Button startIcon={<Icon.CMD />}>CMD</Button>
-        <Button endIcon={<Icon.CMD />}>CMD</Button>
+      </Flex>
+    </Grid>
+    <Grid gap={2}>
+      Tertiary
+      <Flex gap={2}>
+        <Button variant={'tertiary'}>Active</Button>
+        <Button variant={'tertiary'} disabled>
+          Disabled
+        </Button>
+      </Flex>
+    </Grid>
+    <Grid gap={2}>
+      Sizes
+      <Flex gap={2}>
+        <Button size={'small'}>Small</Button>
+        <Button size={'small'} variant={'secondary'}>
+          Small
+        </Button>
+        <Button size={'small'} variant={'tertiary'}>
+          Small
+        </Button>
+      </Flex>
+      <Flex gap={2}>
+        <Button size={'default'}>Default</Button>
+        <Button size={'default'} variant={'secondary'}>
+          Default
+        </Button>
+        <Button size={'default'} variant={'tertiary'}>
+          Default
+        </Button>
+      </Flex>
+      <Flex gap={2}>
+        <Button size={'large'}>Large</Button>
+        <Button size={'large'} variant={'secondary'}>
+          Large
+        </Button>
+        <Button size={'large'} variant={'tertiary'}>
+          Large
+        </Button>
+      </Flex>
+    </Grid>
+    <Grid gap={2}>
+      Colors
+      <Flex gap={2}>
+        <Button>Primary</Button>
+        <Button variant={'secondary'}>Primary</Button>
+        <Button variant={'tertiary'}>Primary</Button>
+      </Flex>
+      <Flex gap={2}>
+        <Button color={'danger'}>Danger</Button>
+        <Button color={'danger'} variant={'secondary'}>
+          Danger
+        </Button>
+        <Button color={'danger'} variant={'tertiary'}>
+          Danger
+        </Button>
+      </Flex>
+      <Flex gap={2}>
+        <Button color={'neutral'}>Neutral</Button>
+        <Button color={'neutral'} variant={'secondary'}>
+          Neutral
+        </Button>
+        <Button color={'neutral'} variant={'tertiary'}>
+          Neutral
+        </Button>
+      </Flex>
+    </Grid>
+    <Grid gap={2}>
+      With icons
+      <Flex gap={2}>
+        <Button startIcon={<Icon.CMD />}>Position start</Button>
+        <Button startIcon={<Icon.CMD />} variant={'secondary'}>
+          Position start
+        </Button>
+        <Button startIcon={<Icon.CMD />} variant={'tertiary'}>
+          Position start
+        </Button>
+      </Flex>
+      <Flex gap={2}>
+        <Button endIcon={<Icon.CMD />}>Position end</Button>
+        <Button endIcon={<Icon.CMD />} variant={'secondary'}>
+          Position end
+        </Button>
+        <Button endIcon={<Icon.CMD />} variant={'tertiary'}>
+          Position end
+        </Button>
+      </Flex>
+    </Grid>
+    <Grid gap={2}>
+      Only icons
+      <Flex gap={2}>
         <Button onlyIcon icon={<Icon.CMD size={5} />} />
         <Button onlyIcon variant={'secondary'} icon={<Icon.CMD size={5} />} />
         <Button onlyIcon variant={'tertiary'} icon={<Icon.CMD size={5} />} />
-      </Flex>
-    </Grid>
-    <Grid gap={2}>
-      Disabled
-      <Flex gap={2}>
-        <Button disabled>Click me</Button>
-        <Button variant={'secondary'} disabled>
-          Click me
-        </Button>
-        <Button destructive disabled>
-          Click me
-        </Button>
-        <Button destructive disabled variant={'secondary'}>
-          Click me
-        </Button>
-        <Button startIcon={<Icon.CMD />} disabled>
-          CMD
-        </Button>
-        <Button endIcon={<Icon.CMD />} disabled>
-          CMD
-        </Button>
-        <Button onlyIcon icon={<Icon.CMD size={5} />} disabled />
-        <Button onlyIcon variant={'secondary'} icon={<Icon.CMD size={5} />} disabled />
-      </Flex>
-    </Grid>
-    <Grid gap={2}>
-      Small
-      <Flex gap={2}>
-        <Button size={'small'}>Click me</Button>
-        <Button size={'small'} variant={'secondary'}>
-          Click me
-        </Button>
-        <Button size={'small'} destructive>
-          Click me
-        </Button>
-        <Button size={'small'} variant={'secondary'} destructive>
-          Click me
-        </Button>
-        <Button size={'small'} startIcon={<Icon.CMD />}>
-          CMD
-        </Button>
-        <Button size={'small'} endIcon={<Icon.CMD />}>
-          CMD
-        </Button>
-        <Button size={'small'} onlyIcon icon={<Icon.CMD size={4} />} />
-        <Button size={'small'} onlyIcon variant={'secondary'} icon={<Icon.CMD size={4} />} />
-      </Flex>
-    </Grid>
-    <Grid gap={2}>
-      Large
-      <Flex gap={2}>
-        <Button size={'large'}>Click me</Button>
-        <Button size={'large'} variant={'secondary'}>
-          Click me
-        </Button>
-        <Button size={'large'} destructive>
-          Click me
-        </Button>
-        <Button size={'large'} variant={'secondary'} destructive>
-          Click me
-        </Button>
-        <Button size={'large'} startIcon={<Icon.CMD />}>
-          CMD
-        </Button>
-        <Button size={'large'} endIcon={<Icon.CMD />}>
-          CMD
-        </Button>
-        <Button size={'large'} onlyIcon icon={<Icon.CMD size={6} />} />
-        <Button size={'large'} onlyIcon variant={'secondary'} icon={<Icon.CMD size={6} />} />
       </Flex>
     </Grid>
   </Grid>

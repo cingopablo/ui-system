@@ -23,6 +23,7 @@ export const light = {
     '--color-danger-emphasis': 'hsl(var(--palette-red-350))',
     '--color-danger-clear': 'hsl(var(--palette-red-100))',
     '--color-shadow': 'var(--palette-purple-500)',
+    '--color-shadow-neutral': 'var(--palette-gray-500)',
     '--color-shadow-info': 'var(--palette-blue-500)',
     '--color-shadow-success': 'var(--palette-green-500)',
     '--color-shadow-warning': 'var(--palette-orange-500)',

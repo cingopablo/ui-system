@@ -82,25 +82,9 @@ export const StyledButton = styled('button', {
         },
       },
     },
-    size: {
-      small: {
-        height: '32px',
-        fontSize: text.default.fontSize,
-        fontWeight: text.default.fontWeight,
-      },
-      default: {
-        height: '40px',
-        fontSize: text.button.fontSize,
-        fontWeight: text.button.fontWeight,
-      },
-      large: {
-        height: '60px',
-        fontSize: text.medium.fontSize,
-        fontWeight: text.medium.fontWeight,
-      },
-    },
-    destructive: {
-      true: {
+    color: {
+      primary: {},
+      danger: {
         color: 'var(--color, hsl(var(--palette-gray-20)))',
         backgroundColor: 'var(--background, var(--color-danger))',
         '--color-shadow': 'var(--color-shadow-danger)',
@@ -118,6 +102,41 @@ export const StyledButton = styled('button', {
           boxShadow: `inset 0 0 0 2px var(--color-danger-emphasis), ${shadows.large}`,
         },
       },
+      neutral: {
+        color: 'var(--color, hsl(var(--palette-gray-20)))',
+        backgroundColor: 'var(--background, var(--color-text-secondary))',
+        '--color-shadow': 'var(--color-shadow-neutral)',
+        boxShadow: `inset 0 0 0 2px var(--color-text-secondary), ${shadows.medium}`,
+
+        '&:hover': {
+          '&:not(:disabled)': {
+            '--background': 'var(--color-text-primary)',
+            boxShadow: `inset 0 0 0 2px var(--color-text-primary), ${shadows.large}`,
+          },
+        },
+
+        '&:focus-visible': {
+          '--background': 'var(--color-text-primary)',
+          boxShadow: `inset 0 0 0 2px var(--color-text-primary), ${shadows.large}`,
+        },
+      },
+    },
+    size: {
+      small: {
+        height: '32px',
+        fontSize: text.default.fontSize,
+        fontWeight: text.default.fontWeight,
+      },
+      default: {
+        height: '40px',
+        fontSize: text.button.fontSize,
+        fontWeight: text.button.fontWeight,
+      },
+      large: {
+        height: '60px',
+        fontSize: text.medium.fontSize,
+        fontWeight: text.medium.fontWeight,
+      },
     },
     onlyIcon: {
       true: {
@@ -131,7 +150,7 @@ export const StyledButton = styled('button', {
   compoundVariants: [
     {
       variant: 'secondary',
-      destructive: true,
+      color: 'danger',
       css: {
         color: 'var(--color, var(--color-danger))',
         backgroundColor: 'var(--background, transparent)',
@@ -153,11 +172,81 @@ export const StyledButton = styled('button', {
         },
       },
     },
+    {
+      variant: 'tertiary',
+      color: 'danger',
+      css: {
+        color: 'var(--color, var(--color-danger))',
+        backgroundColor: 'var(--background, transparent)',
+        boxShadow: 'none',
+
+        '&:hover': {
+          '&:not(:disabled)': {
+            '--color': 'var(--color-danger-emphasis)',
+            backgroundColor: 'transparent',
+            boxShadow: 'none',
+          },
+        },
+
+        '&:focus-visible': {
+          '--color': 'var(--color-danger-emphasis)',
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
+        },
+      },
+    },
+    {
+      variant: 'secondary',
+      color: 'neutral',
+      css: {
+        color: 'var(--color, var(--color-text-secondary))',
+        backgroundColor: 'var(--background, transparent)',
+        '--color-shadow': 'var(--color-shadow-neutral)',
+        boxShadow: `inset 0 0 0 2px var(--color-text-secondary), ${shadows.medium}`,
+
+        '&:hover': {
+          '&:not(:disabled)': {
+            '--color': 'var(--color-text-primary)',
+            backgroundColor: 'transparent',
+            boxShadow: `inset 0 0 0 2px var(--color-text-primary), ${shadows.large}`,
+          },
+        },
+
+        '&:focus-visible': {
+          '--color': 'var(--color-text-primary)',
+          backgroundColor: 'transparent',
+          boxShadow: `inset 0 0 0 2px var(--color-text-primary), ${shadows.large}`,
+        },
+      },
+    },
+    {
+      variant: 'tertiary',
+      color: 'neutral',
+      css: {
+        color: 'var(--color, var(--color-text-secondary))',
+        backgroundColor: 'var(--background, transparent)',
+        boxShadow: 'none',
+
+        '&:hover': {
+          '&:not(:disabled)': {
+            '--color': 'var(--color-text-primary)',
+            backgroundColor: 'transparent',
+            boxShadow: 'none',
+          },
+        },
+
+        '&:focus-visible': {
+          '--color': 'var(--color-text-primary)',
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
+        },
+      },
+    },
   ],
   defaultVariants: {
     variant: 'primary',
-    size: 'small',
-    destructive: false,
+    size: 'default',
+    color: 'primary',
     onlyIcon: false,
   },
 })
