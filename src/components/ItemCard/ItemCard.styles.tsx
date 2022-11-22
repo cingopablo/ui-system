@@ -16,6 +16,10 @@ export const ItemCardWrapper = styled(motion.div, {
 export const TextWrapper = styled(Text, {
   margin: '0 !important',
   textTransform: 'none',
+
+  '@sm': {
+    display: 'block',
+  },
 })
 
 export const TitleWrapper = styled(TitleMotion, {
