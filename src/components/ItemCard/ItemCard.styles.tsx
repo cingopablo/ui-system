@@ -24,10 +24,10 @@ export const TitleWrapper = styled(TitleMotion, {
   margin: '0 !important',
   textTransform: 'uppercase',
   fontSize: '130px !important',
-  fontWeight: 'var(--font-weight-4)',
-  lineHeight: 'var(--font-height-heading)',
+  fontWeight: 'var(--font-weight-4) !important',
+  lineHeight: 'var(--font-height-heading) !important',
 
-  '@md': {
+  '@sm': {
     fontSize: 'var(--font-size-8) !important',
   },
 })
