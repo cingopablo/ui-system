@@ -2,7 +2,6 @@ import { CSS } from '../../theming/stitches.config'
 
 export interface ItemCardProps {
   year: string
-  active?: boolean
   src: string
   onClick?: () => void
   title: string

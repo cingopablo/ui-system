@@ -13,8 +13,8 @@ const titleVariants = {
   },
 }
 
-export const ItemCard = ({ title, year, src, position, onClick, css, variant, active }: ItemCardProps) => {
-  const [trackActive, setTrackActive] = React.useState(active || false)
+export const ItemCard = ({ title, year, src, position, onClick, css, variant }: ItemCardProps) => {
+  const [trackActive, setTrackActive] = React.useState(false)
   return (
     <TrackImage src={src} position={position} variant={variant}>
       <ItemCardWrapper

@@ -6,7 +6,6 @@ import { Text } from '../Typography'
 const TitleMotion = motion(Text)
 
 export const ItemCardWrapper = styled(motion.div, {
-  padding: 'var(--spacing-7) 0',
   position: 'relative',
   width: '100%',
   display: 'flex',
