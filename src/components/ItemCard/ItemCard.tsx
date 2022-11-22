@@ -25,10 +25,10 @@ export const ItemCard = ({ title, year, src, position, onClick, css, variant, ac
         css={css}
         onMouseOver={() => setTrackActive(true)}
         onMouseLeave={() => setTrackActive(false)}>
-        <TextWrapper size={'medium'} weight={3} variant={'color'} outline={!trackActive}>
-          {`${year}.`}
-        </TextWrapper>
         <TitleWrapper variants={titleVariants} variant={'color'} outline={!trackActive}>
+          <TextWrapper size={'medium'} weight={3} variant={'color'} outline={!trackActive}>
+            {`${year}. `}
+          </TextWrapper>
           {title}
         </TitleWrapper>
         <PositionWrapper size={'medium'} weight={2}>

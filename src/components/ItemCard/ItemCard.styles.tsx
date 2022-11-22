@@ -9,15 +9,14 @@ export const ItemCardWrapper = styled(motion.div, {
   padding: 'var(--spacing-7) 0',
   position: 'relative',
   width: '100%',
-  display: 'grid',
-  gridTemplateColumns: '1fr auto auto',
-  alignItems: 'baseline',
+  display: 'flex',
+  alignItems: 'center',
   textAlign: 'right',
-  gap: 'var(--spacing-6)',
 })
 
 export const TextWrapper = styled(Text, {
   margin: '0 !important',
+  textTransform: 'none',
 })
 
 export const TitleWrapper = styled(TitleMotion, {
@@ -26,9 +25,10 @@ export const TitleWrapper = styled(TitleMotion, {
   fontSize: '130px !important',
   fontWeight: 'var(--font-weight-4) !important',
   lineHeight: 'var(--font-height-heading) !important',
+  width: '100%',
 
   '@sm': {
-    fontSize: 'var(--font-size-7) !important',
+    fontSize: 'var(--font-size-6) !important',
   },
 })
 
