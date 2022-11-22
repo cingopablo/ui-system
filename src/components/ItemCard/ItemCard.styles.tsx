@@ -28,7 +28,7 @@ export const TitleWrapper = styled(TitleMotion, {
   lineHeight: 'var(--font-height-heading) !important',
 
   '@sm': {
-    fontSize: 'var(--font-size-8) !important',
+    fontSize: 'var(--font-size-7) !important',
   },
 })
 
