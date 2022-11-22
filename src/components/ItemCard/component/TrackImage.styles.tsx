@@ -8,14 +8,15 @@ const PositionMotion = motion(Text)
 export const TrackImageWrapper = styled(motion.div, {
   cursor: 'pointer',
   position: 'relative',
+  transformOrigin: 'bottom right',
 })
 
 export const TrackImageContainer = styled(motion.div, {
   fontWeight: 'var(--font-weight-4)',
   position: 'absolute',
   zIndex: 10,
-  left: 'auto',
-  right: 50,
+  left: 50,
+  right: 'auto',
   top: -150,
   opacity: 0,
   width: 320,

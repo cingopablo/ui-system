@@ -1,41 +1,39 @@
 import { motion } from 'framer-motion'
 
 import { styled } from '../../theming/stitches.config'
-import { H2, Text } from '../Typography'
+import { Text } from '../Typography'
 
-const TitleMotion = motion(H2)
+const TitleMotion = motion(Text)
 
 export const ItemCardWrapper = styled(motion.div, {
   padding: 'var(--spacing-7) 0',
   position: 'relative',
   width: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-
-  '@md': {
-    display: 'grid',
-    justifyContent: 'stretch',
-  },
+  display: 'grid',
+  gridTemplateColumns: '1fr auto auto',
+  alignItems: 'baseline',
+  textAlign: 'right',
+  gap: 'var(--spacing-6)',
 })
 
-export const ImageWrapper = styled('div', {
-  display: 'none',
-  '@md': {
-    display: 'block',
-    marginBottom: 'var(--spacing-4)',
-  },
+export const TextWrapper = styled(Text, {
+  margin: '0 !important',
 })
 
 export const TitleWrapper = styled(TitleMotion, {
   margin: '0 !important',
+  textTransform: 'uppercase',
+  fontSize: '130px !important',
+  fontWeight: 'var(--font-weight-4)',
+  lineHeight: 'var(--font-height-heading)',
+
+  '@md': {
+    fontSize: 'var(--font-size-8) !important',
+  },
 })
 
 export const PositionWrapper = styled(Text, {
   display: 'none',
   lineHeight: 'var(--font-height-heading)',
   margin: '0 !important',
-  '@md': {
-    display: 'block',
-  },
 })

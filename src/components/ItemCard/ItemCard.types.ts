@@ -1,8 +1,9 @@
 import { CSS } from '../../theming/stitches.config'
 
 export interface ItemCardProps {
+  year: string
+  active?: boolean
   src: string
-  imageMobile: React.ReactNode
   onClick?: () => void
   title: string
   position: string
