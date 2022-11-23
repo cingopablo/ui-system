@@ -31,7 +31,7 @@ export const TrackImage = ({ children, src, position, variant = 'white' }: Track
     enter: {
       opacity: 1,
       rotateZ: -10 + x * 0.01,
-      x: 150 + x * 0.1,
+      x: 80 + x * 0.1,
     },
   }
 

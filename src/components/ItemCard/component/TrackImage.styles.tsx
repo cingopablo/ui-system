@@ -31,6 +31,7 @@ export const TrackImageContainer = styled(motion.div, {
 
   '@md': {
     visibility: 'hidden',
+    display: 'none',
   },
 })
 
