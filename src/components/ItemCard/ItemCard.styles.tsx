@@ -29,6 +29,7 @@ export const TitleWrapper = styled(TitleMotion, {
   fontWeight: 'var(--font-weight-4) !important',
   lineHeight: 'var(--font-height-heading) !important',
   width: '100%',
+  display: 'grid',
 
   '@sm': {
     fontSize: 'var(--font-size-6) !important',
