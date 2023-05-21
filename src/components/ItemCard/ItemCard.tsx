@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { TrackImage } from './component/TrackImage'
-import { ItemCardWrapper, PositionWrapper, TextWrapper, TitleWrapper } from './ItemCard.styles'
+import { ItemCardWrapper, PositionWrapper, TitleWrapper } from './ItemCard.styles'
 import { ItemCardProps } from './ItemCard.types'
 
 const titleVariants = {
@@ -13,7 +13,7 @@ const titleVariants = {
   },
 }
 
-export const ItemCard = ({ title, year, src, position, onClick, css, variant }: ItemCardProps) => {
+export const ItemCard = ({ title, src, position, onClick, css, variant }: ItemCardProps) => {
   const [trackActive, setTrackActive] = React.useState(false)
   return (
     <TrackImage src={src} position={position} variant={variant}>
@@ -26,9 +26,6 @@ export const ItemCard = ({ title, year, src, position, onClick, css, variant }: 
         onMouseOver={() => setTrackActive(true)}
         onMouseLeave={() => setTrackActive(false)}>
         <TitleWrapper variants={titleVariants} variant={'color'} outline={!trackActive}>
-          <TextWrapper size={'medium'} weight={3} variant={'color'} outline={!trackActive}>
-            {`${year}`}
-          </TextWrapper>
           {title}
         </TitleWrapper>
         <PositionWrapper size={'medium'} weight={2}>

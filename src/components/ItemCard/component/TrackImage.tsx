@@ -14,6 +14,8 @@ import { TrackImageProps } from './TrackImage.types'
 const viewSite = 'VIEW SITE - VIEW SITE - VIEW SITE -'
 
 export const TrackImage = ({ children, src, position, variant = 'white' }: TrackImageProps) => {
+  const ref = React.useRef<HTMLDivElement>(null)
+  const [width, setWidth] = React.useState(0)
   const [x, setX] = React.useState(0)
   const [animate, setAnimate] = React.useState('default')
 
@@ -26,12 +28,20 @@ export const TrackImage = ({ children, src, position, variant = 'white' }: Track
     return () => window.removeEventListener('mousemove', mouseMove)
   }, [])
 
+  React.useLayoutEffect(() => {
+    if (ref.current) {
+      setWidth(ref.current.offsetWidth)
+    }
+  }, [])
+
   const variants = {
-    default: {},
+    default: {
+      x: width * 0.7,
+    },
     enter: {
       opacity: 1,
-      rotateZ: -10 + x * 0.01,
-      x: 80 + x * 0.1,
+      rotateZ: 8 + x * 0.01,
+      x: (width * 0.7 - 200) + x * 0.1,
     },
   }
 
@@ -59,6 +69,7 @@ export const TrackImage = ({ children, src, position, variant = 'white' }: Track
     <TrackImageWrapper
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
+      ref={ref}
       // style={{ rotateX: 10, rotateY: 20, rotateZ: 5 }}
       // whileHover={{ rotateX: 0, rotateY: 0, rotateZ: 0 }}
     >
