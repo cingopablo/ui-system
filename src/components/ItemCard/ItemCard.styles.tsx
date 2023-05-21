@@ -25,7 +25,7 @@ export const TextWrapper = styled(Text, {
 export const TitleWrapper = styled(TitleMotion, {
   margin: '0 !important',
   textTransform: 'uppercase',
-  fontSize: '130px !important',
+  fontSize: '80px !important',
   fontWeight: 'var(--font-weight-4) !important',
   lineHeight: 'var(--font-height-heading) !important',
   width: '100%',
