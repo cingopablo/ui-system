@@ -28,7 +28,7 @@ export const TrackImage = ({ children, src, position, variant = 'white' }: Track
     return () => window.removeEventListener('mousemove', mouseMove)
   }, [])
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     if (ref.current) {
       setWidth(ref.current.offsetWidth)
     }
